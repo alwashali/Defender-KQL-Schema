@@ -1,0 +1,4317 @@
+[
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the alert",
+                "Name": "AlertId"
+            },
+            {
+                "Description": "Title of the alert",
+                "Name": "Title"
+            },
+            {
+                "Description": "Type of threat indicator or breach activity identified by the alert",
+                "Name": "Category"
+            },
+            {
+                "Description": "Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert",
+                "Name": "Severity"
+            },
+            {
+                "Description": "Product or service that provided the alert information",
+                "Name": "ServiceSource"
+            },
+            {
+                "Description": "Detection technology or sensor that identified the notable component or activity",
+                "Name": "DetectionSource"
+            },
+            {
+                "Description": "MITRE ATT&CK techniques associated with the activity that triggered the alert",
+                "Name": "AttackTechniques"
+            }
+        ],
+        "table": "AlertInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the alert",
+                "Name": "AlertId"
+            },
+            {
+                "Description": "Title of the alert",
+                "Name": "Title"
+            },
+            {
+                "Description": "List of categories that the information belongs to, in JSON array format",
+                "Name": "Categories"
+            },
+            {
+                "Description": "MITRE ATT&CK techniques associated with the activity that triggered the alert",
+                "Name": "AttackTechniques"
+            },
+            {
+                "Description": "Product or service that provided the alert information",
+                "Name": "ServiceSource"
+            },
+            {
+                "Description": "Detection technology or sensor that identified the notable component or activity",
+                "Name": "DetectionSource"
+            },
+            {
+                "Description": "Type of object, such as a file, a process, a device, or a user",
+                "Name": "EntityType"
+            },
+            {
+                "Description": "How the entity is involved in an alert, indicating whether it is impacted or is merely related",
+                "Name": "EvidenceRole"
+            },
+            {
+                "Description": "Indicates whether the entity is the source or the destination of a network connection",
+                "Name": "EvidenceDirection"
+            },
+            {
+                "Description": "Name of the file that the recorded action was applied to",
+                "Name": "FileName"
+            },
+            {
+                "Description": "Folder containing the file that the recorded action was applied to",
+                "Name": "FolderPath"
+            },
+            {
+                "Description": "SHA-1 hash of the file that the recorded action was applied to",
+                "Name": "SHA1"
+            },
+            {
+                "Description": "SHA-256 of the file that the recorded action was applied to",
+                "Name": "SHA256"
+            },
+            {
+                "Description": "Size of the file in bytes",
+                "Name": "FileSize"
+            },
+            {
+                "Description": "Malware family that the suspicious or malicious file or process has been classified under",
+                "Name": "ThreatFamily"
+            },
+            {
+                "Description": "IP address that was being connected to",
+                "Name": "RemoteIP"
+            },
+            {
+                "Description": "URL or fully qualified domain name (FQDN) that was being connected to",
+                "Name": "RemoteUrl"
+            },
+            {
+                "Description": "User name of the account",
+                "Name": "AccountName"
+            },
+            {
+                "Description": "Domain of the account",
+                "Name": "AccountDomain"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account",
+                "Name": "AccountSid"
+            },
+            {
+                "Description": "Unique identifier for the account in Microsoft Entra ID",
+                "Name": "AccountObjectId"
+            },
+            {
+                "Description": "User principal name (UPN) of the account",
+                "Name": "AccountUpn"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "IP address assigned to the local machine used during communication",
+                "Name": "LocalIP"
+            },
+            {
+                "Description": "Unique identifier for the email, generated by Office 365",
+                "Name": "NetworkMessageId"
+            },
+            {
+                "Description": "Subject of the email",
+                "Name": "EmailSubject"
+            },
+            {
+                "Description": "Application that performed the recorded action",
+                "Name": "Application"
+            },
+            {
+                "Description": "Unique identifier for the application ",
+                "Name": "ApplicationId"
+            },
+            {
+                "Description": "Unique identifier of the third-party OAuth application",
+                "Name": "OAuthApplicationId"
+            },
+            {
+                "Description": "Command line used to create the new process",
+                "Name": "ProcessCommandLine"
+            },
+            {
+                "Description": "Registry key that the recorded action was applied to",
+                "Name": "RegistryKey"
+            },
+            {
+                "Description": "Name of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueName"
+            },
+            {
+                "Description": "Data of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueData"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert",
+                "Name": "Severity"
+            },
+            {
+                "Description": "Cloud resource name",
+                "Name": "CloudResource"
+            },
+            {
+                "Description": "The cloud platform that the resource belongs to, can be Azure, Amazon Web Services, or Google Cloud Platform",
+                "Name": "CloudPlatform"
+            },
+            {
+                "Description": "Type of cloud resource",
+                "Name": "ResourceType"
+            },
+            {
+                "Description": "Unique identifier of the cloud resource accessed",
+                "Name": "ResourceID"
+            },
+            {
+                "Description": "Unique identifier of the cloud service subscription",
+                "Name": "SubscriptionId"
+            }
+        ],
+        "table": "AlertEvidence"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Unique identifier for the account in Microsoft Entra ID",
+                "Name": "AccountObjectId"
+            },
+            {
+                "Description": "User principal name (UPN) of the account",
+                "Name": "AccountUpn"
+            },
+            {
+                "Description": "On-premises security identifier (SID) of the account",
+                "Name": "OnPremSid"
+            },
+            {
+                "Description": "Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.",
+                "Name": "AccountDisplayName"
+            },
+            {
+                "Description": "User name of the account",
+                "Name": "AccountName"
+            },
+            {
+                "Description": "Domain of the account",
+                "Name": "AccountDomain"
+            },
+            {
+                "Description": "The criticality score of each account",
+                "Name": "CriticalityLevel"
+            },
+            {
+                "Description": "The certificate’s type. It is one of the following: Machine, Server, Intermediate, Root, TrustedPublisher or Other",
+                "Name": "Type"
+            },
+            {
+                "Description": "On premises distinguished name of the account user",
+                "Name": "DistinguishedName"
+            },
+            {
+                "Description": "Cloud security identifier of the account",
+                "Name": "CloudSid"
+            },
+            {
+                "Description": "Given name or first name of the account user",
+                "Name": "GivenName"
+            },
+            {
+                "Description": "Surname, family name, or last name of the account user",
+                "Name": "Surname"
+            },
+            {
+                "Description": "Name of the department that the account user belongs to",
+                "Name": "Department"
+            },
+            {
+                "Description": "Job title of the account user",
+                "Name": "JobTitle"
+            },
+            {
+                "Description": "SMTP address of the account",
+                "Name": "EmailAddress"
+            },
+            {
+                "Description": "Voice of over IP (VOIP) session initiation protocol (SIP) address of the account",
+                "Name": "SipProxyAddress"
+            },
+            {
+                "Description": "Address of the account user",
+                "Name": "Address"
+            },
+            {
+                "Description": "City where the client IP address is geolocated",
+                "Name": "City"
+            },
+            {
+                "Description": "Country/Region where the account user is located",
+                "Name": "Country"
+            },
+            {
+                "Description": "Indicates whether the account is enabled or not",
+                "Name": "IsAccountEnabled"
+            },
+            {
+                "Description": "Manager of the account user",
+                "Name": "Manager"
+            },
+            {
+                "Description": "Phone number of the account user",
+                "Name": "Phone"
+            },
+            {
+                "Description": "Date and time when the account user was created",
+                "Name": "CreatedDateTime"
+            },
+            {
+                "Description": "The primary Identity provider of the account user",
+                "Name": "SourceProvider"
+            },
+            {
+                "Description": "The last source system to modify the account user",
+                "Name": "ChangeSource"
+            },
+            {
+                "Description": "A calculation based on the position of the user in the org tree and the user's Microsoft Entra roles and permissions. Possible values: Low, Medium, High",
+                "Name": "BlastRadius"
+            },
+            {
+                "Description": "The name for the company in which the user works",
+                "Name": "CompanyName"
+            },
+            {
+                "Description": "The date and time the user was deleted",
+                "Name": "DeletedDateTime"
+            },
+            {
+                "Description": "The employee identifier assigned to the user by the organization",
+                "Name": "EmployeeId"
+            },
+            {
+                "Description": "Additional email addresses of the user",
+                "Name": "OtherMailAddresses"
+            },
+            {
+                "Description": "The AAD risk level (Low/Medium/High) of the user account",
+                "Name": "RiskLevel"
+            },
+            {
+                "Description": "Details regarding the AAD risk level",
+                "Name": "RiskLevelDetails"
+            },
+            {
+                "Description": "State where the sign-in occurred, if available",
+                "Name": "State"
+            },
+            {
+                "Description": "Labels representing various attributes used to identify or categorize a security configuration",
+                "Name": "Tags"
+            },
+            {
+                "Description": "Active roles assigned to the account",
+                "Name": "AssignedRoles"
+            },
+            {
+                "Description": "A snapshot of privileged role assignment schedules and eligibility schedules for the account as maintained by Microsoft Entra Privileged Identity Management (excluding activated assignments)",
+                "Name": "PrivilegedEntraPimRoles"
+            }
+        ],
+        "table": "IdentityInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Application that performed the recorded action",
+                "Name": "Application"
+            },
+            {
+                "Description": "Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service",
+                "Name": "LogonType"
+            },
+            {
+                "Description": "Protocol used during the communication",
+                "Name": "Protocol"
+            },
+            {
+                "Description": "Information explaining why the recorded action failed",
+                "Name": "FailureReason"
+            },
+            {
+                "Description": "User name of the account",
+                "Name": "AccountName"
+            },
+            {
+                "Description": "Domain of the account",
+                "Name": "AccountDomain"
+            },
+            {
+                "Description": "User principal name (UPN) of the account",
+                "Name": "AccountUpn"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account",
+                "Name": "AccountSid"
+            },
+            {
+                "Description": "Unique identifier for the account in Microsoft Entra ID",
+                "Name": "AccountObjectId"
+            },
+            {
+                "Description": "Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.",
+                "Name": "AccountDisplayName"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer",
+                "Name": "DeviceType"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "IP address assigned to the device during communication",
+                "Name": "IPAddress"
+            },
+            {
+                "Description": "TCP port used during communication",
+                "Name": "Port"
+            },
+            {
+                "Description": "Name of the device running the server application that processed the recorded action",
+                "Name": "DestinationDeviceName"
+            },
+            {
+                "Description": "IP address of the device running the server application that processed the recorded action",
+                "Name": "DestinationIPAddress"
+            },
+            {
+                "Description": "Destination port of the activity",
+                "Name": "DestinationPort"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device that the recorded action was applied to",
+                "Name": "TargetDeviceName"
+            },
+            {
+                "Description": "Display name of the account that the recorded action was applied to",
+                "Name": "TargetAccountDisplayName"
+            },
+            {
+                "Description": "City, country, or other geographic location associated with the event",
+                "Name": "Location"
+            },
+            {
+                "Description": "Internet service provider associated with  the IP address",
+                "Name": "ISP"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "List of features observed to be statistically uncommon for the user that performed the activity",
+                "Name": "UncommonForUser"
+            },
+            {
+                "Description": "Number of days since each statistical feature for the user was last seen",
+                "Name": "LastSeenForUser"
+            }
+        ],
+        "table": "IdentityLogonEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Application that performed the recorded action",
+                "Name": "Application"
+            },
+            {
+                "Description": "Unique identifier for the application ",
+                "Name": "ApplicationId"
+            },
+            {
+                "Description": "Unique identifier for the instance of an application",
+                "Name": "AppInstanceId"
+            },
+            {
+                "Description": "Unique identifier for the account in Microsoft Entra ID",
+                "Name": "AccountObjectId"
+            },
+            {
+                "Description": "An identifier for the account as found by Microsoft Cloud App Security. Could be Microsoft Entra ID, user principal name, or other identifiers.",
+                "Name": "AccountId"
+            },
+            {
+                "Description": "Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.",
+                "Name": "AccountDisplayName"
+            },
+            {
+                "Description": "Indicates whether the activity was performed by an administrator",
+                "Name": "IsAdminOperation"
+            },
+            {
+                "Description": "Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer",
+                "Name": "DeviceType"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "IP address assigned to the device during communication",
+                "Name": "IPAddress"
+            },
+            {
+                "Description": "Indicates whether the IP address belongs to a known anonymous proxy",
+                "Name": "IsAnonymousProxy"
+            },
+            {
+                "Description": "Two-letter code indicating the country where the client IP address is geolocated",
+                "Name": "CountryCode"
+            },
+            {
+                "Description": "City where the client IP address is geolocated",
+                "Name": "City"
+            },
+            {
+                "Description": "Internet service provider associated with  the IP address",
+                "Name": "ISP"
+            },
+            {
+                "Description": "User agent information from the web browser or other client application",
+                "Name": "UserAgent"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActivityType"
+            },
+            {
+                "Description": "List of objects, such as files or folders, that were involved in the recorded activity",
+                "Name": "ActivityObjects"
+            },
+            {
+                "Description": "Name of the object that the recorded action was applied to",
+                "Name": "ObjectName"
+            },
+            {
+                "Description": "The type of object, such as a file or a folder, that the recorded action was applied to",
+                "Name": "ObjectType"
+            },
+            {
+                "Description": "Unique identifier of the object that the recorded action was applied to",
+                "Name": "ObjectId"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Type of user account, indicating its general role and access levels, such as Regular, System, Admin, Application",
+                "Name": "AccountType"
+            },
+            {
+                "Description": "Indicates whether a user inside the network does not belong to the organization’s domain",
+                "Name": "IsExternalUser"
+            },
+            {
+                "Description": "Indicates whether the activity was performed by one user on behalf of another (impersonated) user",
+                "Name": "IsImpersonated"
+            },
+            {
+                "Description": "Customer-defined information applied to specific IP addresses and IP address ranges",
+                "Name": "IPTags"
+            },
+            {
+                "Description": "Additional information about the IP address",
+                "Name": "IPCategory"
+            },
+            {
+                "Description": "More information provided by Microsoft Cloud App Security in a tag in the user agent field. Can have any of the following values: Native client, Outdated browser, Outdated operating system, Robot",
+                "Name": "UserAgentTags"
+            },
+            {
+                "Description": "Raw event information from the source application or service in JSON format",
+                "Name": "RawEventData"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Session identifiers (if provided by the audit source)",
+                "Name": "SessionData"
+            },
+            {
+                "Description": "Cloud enviorment source of the cloud audit event. Cloud be Azure, AWS, GCP, AliCloud or other",
+                "Name": "AuditSource"
+            },
+            {
+                "Description": "A unique identifier that's assigned to an application when it’s registered to Entra with OAuth 2.0.",
+                "Name": "OAuthAppId"
+            },
+            {
+                "Description": "List of features observed to be statistically uncommon for the user that performed the activity",
+                "Name": "UncommonForUser"
+            },
+            {
+                "Description": "Number of days since each statistical feature for the user was last seen",
+                "Name": "LastSeenForUser"
+            }
+        ],
+        "table": "CloudAppEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the email, generated by Office 365",
+                "Name": "NetworkMessageId"
+            },
+            {
+                "Description": "Public-facing identifier for the email that is set by the sending email system",
+                "Name": "InternetMessageId"
+            },
+            {
+                "Description": "Sender email address in the MAIL FROM header, also known as the envelope sender or the Return-Path address",
+                "Name": "SenderMailFromAddress"
+            },
+            {
+                "Description": "Sender email address in the FROM header, which is visible to email recipients on their email clients",
+                "Name": "SenderFromAddress"
+            },
+            {
+                "Description": "Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname",
+                "Name": "SenderDisplayName"
+            },
+            {
+                "Description": "Unique identifier for the sender’s account in Microsoft Entra ID",
+                "Name": "SenderObjectId"
+            },
+            {
+                "Description": "Sender domain in the MAIL FROM header, also known as the envelope sender or the Return-Path address",
+                "Name": "SenderMailFromDomain"
+            },
+            {
+                "Description": "Sender domain in the FROM header, which is visible to email recipients on their email clients",
+                "Name": "SenderFromDomain"
+            },
+            {
+                "Description": "IPv4 address of the last detected mail server that relayed the message",
+                "Name": "SenderIPv4"
+            },
+            {
+                "Description": "IPv6 address of the last detected mail server that relayed the message",
+                "Name": "SenderIPv6"
+            },
+            {
+                "Description": "Email address of the recipient, or email address of the recipient after distribution list expansion",
+                "Name": "RecipientEmailAddress"
+            },
+            {
+                "Description": "Unique identifier for the email recipient in Microsoft Entra ID",
+                "Name": "RecipientObjectId"
+            },
+            {
+                "Description": "Subject of the email",
+                "Name": "Subject"
+            },
+            {
+                "Description": "Identifier for the group of similar emails clustered based on heuristic analysis of their contents",
+                "Name": "EmailClusterId"
+            },
+            {
+                "Description": "Direction of the email relative to your network:  Inbound, Outbound, Intra-org",
+                "Name": "EmailDirection"
+            },
+            {
+                "Description": "Delivery action of the email: Delivered, Junked, Blocked, or Replaced",
+                "Name": "DeliveryAction"
+            },
+            {
+                "Description": "Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items",
+                "Name": "DeliveryLocation"
+            },
+            {
+                "Description": "Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats",
+                "Name": "ThreatTypes"
+            },
+            {
+                "Description": "Detection name for malware or other threats found",
+                "Name": "ThreatNames"
+            },
+            {
+                "Description": "Methods used to detect malware, phishing, or other threats found in the email",
+                "Name": "DetectionMethods"
+            },
+            {
+                "Description": "List of confidence levels of any spam or phishing verdicts. For spam, this column shows the spam confidence level (SCL), indicating if the email was skipped (-1), found to be not spam (0,1), found to be spam with moderate confidence (5,6), or found to be spam with high confidence (9). For phishing, this column displays whether the confidence level is \"High\" or \"Low\".",
+                "Name": "ConfidenceLevel"
+            },
+            {
+                "Description": "Threshold assigned to email from bulk mailers, a high bulk complain level (BCL) means the email is more likely to generate complaints, and thus more likely to be spam",
+                "Name": "BulkComplaintLevel"
+            },
+            {
+                "Description": "Final action taken on the email based on filter verdict, policies, and user actions:  Move message to junk mail folder, Add X-header, Modify subject, Redirect message, Delete message, send to quarantine, No action taken, Bcc message",
+                "Name": "EmailAction"
+            },
+            {
+                "Description": "Action policy that took effect: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware Safe Attachments, Enterprise Transport Rules (ETR)",
+                "Name": "EmailActionPolicy"
+            },
+            {
+                "Description": "Unique identifier for the policy that determined the final mail action",
+                "Name": "EmailActionPolicyGuid"
+            },
+            {
+                "Description": "List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth)",
+                "Name": "AuthenticationDetails"
+            },
+            {
+                "Description": "Number of attachments in the email",
+                "Name": "AttachmentCount"
+            },
+            {
+                "Description": "Number of embedded URLs in the email",
+                "Name": "UrlCount"
+            },
+            {
+                "Description": "Detected language of the email content",
+                "Name": "EmailLanguage"
+            },
+            {
+                "Description": "Custom instructions that define organizational mail flow and how the email was routed",
+                "Name": "Connectors"
+            },
+            {
+                "Description": "Action taken on the email in response to matches to a policy defined at the organizational level",
+                "Name": "OrgLevelAction"
+            },
+            {
+                "Description": "Organizational policy that triggered the action taken on the email",
+                "Name": "OrgLevelPolicy"
+            },
+            {
+                "Description": "Action taken on the email in response to matches to a mailbox policy defined by the recipient",
+                "Name": "UserLevelAction"
+            },
+            {
+                "Description": "End user mailbox policy that triggered the action taken on the email",
+                "Name": "UserLevelPolicy"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Last known location of the email.",
+                "Name": "LatestDeliveryLocation"
+            },
+            {
+                "Description": "Last known action attempted on an email by the service or by an admin through manual remediation. ",
+                "Name": "LatestDeliveryAction"
+            },
+            {
+                "Description": "Mail flow rules (also known as transport rules) are similar to Inbox rules that are available in Outlook and Outlook on the web. The main difference is mail flow rules take action on messages while they're in transit.",
+                "Name": "ExchangeTransportRule"
+            },
+            {
+                "Description": "Name of distribution list that the recipient was a member of and to which the email was sent, if applicable; shows top-level distribution list if nested lists are involved",
+                "Name": "DistributionList"
+            },
+            {
+                "Description": "A JSON array of forwarding details including the forwarding user and the forwarding type",
+                "Name": "ForwardingInformation"
+            },
+            {
+                "Description": null,
+                "Name": "ThreatClassification"
+            }
+        ],
+        "table": "EmailEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the email, generated by Office 365",
+                "Name": "NetworkMessageId"
+            },
+            {
+                "Description": "Sender email address in the FROM header, which is visible to email recipients on their email clients",
+                "Name": "SenderFromAddress"
+            },
+            {
+                "Description": "Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname",
+                "Name": "SenderDisplayName"
+            },
+            {
+                "Description": "Unique identifier for the sender’s account in Microsoft Entra ID",
+                "Name": "SenderObjectId"
+            },
+            {
+                "Description": "Email address of the recipient, or email address of the recipient after distribution list expansion",
+                "Name": "RecipientEmailAddress"
+            },
+            {
+                "Description": "Unique identifier for the email recipient in Microsoft Entra ID",
+                "Name": "RecipientObjectId"
+            },
+            {
+                "Description": "Name of the file that the recorded action was applied to",
+                "Name": "FileName"
+            },
+            {
+                "Description": "File extension type",
+                "Name": "FileType"
+            },
+            {
+                "Description": "SHA-256 of the file that the recorded action was applied to",
+                "Name": "SHA256"
+            },
+            {
+                "Description": "Size of the file in bytes",
+                "Name": "FileSize"
+            },
+            {
+                "Description": "Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats",
+                "Name": "ThreatTypes"
+            },
+            {
+                "Description": "Detection name for malware or other threats found",
+                "Name": "ThreatNames"
+            },
+            {
+                "Description": "Methods used to detect malware, phishing, or other threats found in the email",
+                "Name": "DetectionMethods"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            }
+        ],
+        "table": "EmailAttachmentInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the email, generated by Office 365",
+                "Name": "NetworkMessageId"
+            },
+            {
+                "Description": "Full Url from email",
+                "Name": "Url"
+            },
+            {
+                "Description": "Domain name or host name of the URL",
+                "Name": "UrlDomain"
+            },
+            {
+                "Description": "Indicates which part of the email the URL is located",
+                "Name": "UrlLocation"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            }
+        ],
+        "table": "EmailUrlInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the email, generated by Office 365",
+                "Name": "NetworkMessageId"
+            },
+            {
+                "Description": "Public-facing identifier for the email that is set by the sending email system",
+                "Name": "InternetMessageId"
+            },
+            {
+                "Description": "Action taken on the entity",
+                "Name": "Action"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Indicates whether an action was triggered by an administrator (manually or through approval of a pending automated action), or by some special mechanism, such as a ZAP or Dynamic Delivery",
+                "Name": "ActionTrigger"
+            },
+            {
+                "Description": "Result of the action",
+                "Name": "ActionResult"
+            },
+            {
+                "Description": "Email address of the recipient, or email address of the recipient after distribution list expansion",
+                "Name": "RecipientEmailAddress"
+            },
+            {
+                "Description": "Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items",
+                "Name": "DeliveryLocation"
+            },
+            {
+                "Description": "Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats",
+                "Name": "ThreatTypes"
+            },
+            {
+                "Description": "Methods used to detect malware, phishing, or other threats found in the email",
+                "Name": "DetectionMethods"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Sender email address in the FROM header, which is visible to email recipients on their email clients",
+                "Name": "SenderFromAddress"
+            },
+            {
+                "Description": "Direction of the email relative to your network:  Inbound, Outbound, Intra-org",
+                "Name": "EmailDirection"
+            }
+        ],
+        "table": "EmailPostDeliveryEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "URL that was clicked",
+                "Name": "Url"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "User principal name (UPN) of the account",
+                "Name": "AccountUpn"
+            },
+            {
+                "Description": "Information about the workload from which the URL originated from",
+                "Name": "Workload"
+            },
+            {
+                "Description": "Unique identifier for the email from which the URL was clicked",
+                "Name": "NetworkMessageId"
+            },
+            {
+                "Description": "Verdict on whether the URL leads to malware, phishing, or other threats",
+                "Name": "ThreatTypes"
+            },
+            {
+                "Description": "Methods used to detect whether the URL contains or leads to malware, phishing, or other threats",
+                "Name": "DetectionMethods"
+            },
+            {
+                "Description": "IP address assigned to the device during communication",
+                "Name": "IPAddress"
+            },
+            {
+                "Description": "Indicates whether the user was able to click through to the original URL or not",
+                "Name": "IsClickedThrough"
+            },
+            {
+                "Description": "List of URLs in the redirection chain",
+                "Name": "UrlChain"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            }
+        ],
+        "table": "UrlClickEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Version of the endpoint agent or sensor running on the machine",
+                "Name": "ClientVersion"
+            },
+            {
+                "Description": "Public IP address used by the onboarded machine to connect to the Windows Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy",
+                "Name": "PublicIP"
+            },
+            {
+                "Description": "Architecture of the operating system running on the machine",
+                "Name": "OSArchitecture"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "Build version of the operating system running on the machine",
+                "Name": "OSBuild"
+            },
+            {
+                "Description": "Boolean indicator of whether machine is joined to the Microsoft Entra ID",
+                "Name": "IsAzureADJoined"
+            },
+            {
+                "Description": "The device's Microsoft Entra ID join type",
+                "Name": "JoinType"
+            },
+            {
+                "Description": "Unique identifier for the device in Microsoft Entra ID",
+                "Name": "AadDeviceId"
+            },
+            {
+                "Description": "List of all users that are logged on the machine at the time of the event in JSON array format",
+                "Name": "LoggedOnUsers"
+            },
+            {
+                "Description": "Device tag added through the registry",
+                "Name": "RegistryDeviceTag"
+            },
+            {
+                "Description": "Version of the operating system running on the machine",
+                "Name": "OSVersion"
+            },
+            {
+                "Description": "Machine group of the machine. This group is used by role-based access control to determine access to the machine",
+                "Name": "MachineGroup"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Indicates whether the device is currently onboarded or not to Microsoft Defender For Endpoint or if the device is not supported",
+                "Name": "OnboardingStatus"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown",
+                "Name": "DeviceCategory"
+            },
+            {
+                "Description": "Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer",
+                "Name": "DeviceType"
+            },
+            {
+                "Description": "Additional modifier for certain types of devices; for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute",
+                "Name": "DeviceSubtype"
+            },
+            {
+                "Description": "Model name or number of the product from the vendor or manufacturer; only available if device discovery finds enough information about this attribute",
+                "Name": "Model"
+            },
+            {
+                "Description": "Name of the product vendor or manufacturer; only available if device discovery finds enough information about this attribute",
+                "Name": "Vendor"
+            },
+            {
+                "Description": "Distribution of the OS platform, such as Ubuntu or RedHat for Linux platforms",
+                "Name": "OSDistribution"
+            },
+            {
+                "Description": "Additional information about the OS version, such as the popular name, code name, or version number",
+                "Name": "OSVersionInfo"
+            },
+            {
+                "Description": "Previous device IDs that have been assigned to the same device.",
+                "Name": "MergedDeviceIds"
+            },
+            {
+                "Description": "The most recent device ID assigned to a device ",
+                "Name": "MergedToDeviceId"
+            },
+            {
+                "Description": "Indicates whether the device is internet-facing",
+                "Name": "IsInternetFacing"
+            },
+            {
+                "Description": "Indicates health of the device’s EDR sensor, if onboarded to Microsoft Defender For Endpoint",
+                "Name": "SensorHealthState"
+            },
+            {
+                "Description": "Determines if the device is excluded from different views and reports in the portal",
+                "Name": "IsExcluded"
+            },
+            {
+                "Description": "The reason for the device being excluded",
+                "Name": "ExclusionReason"
+            },
+            {
+                "Description": "The device's level of vulnerability to exploitation based on its exposure score; can be: Low, Medium, High",
+                "Name": "ExposureLevel"
+            },
+            {
+                "Description": "Priority or value assigned to the device in relation to its importance in computing the organization's exposure score; can be: Low, Normal (Default), High",
+                "Name": "AssetValue"
+            },
+            {
+                "Description": "Device tags created manually using the portal UI or public API",
+                "Name": "DeviceManualTags"
+            },
+            {
+                "Description": "Device tags added and removed dynamically based on dynamic rules",
+                "Name": "DeviceDynamicTags"
+            },
+            {
+                "Description": "Universally Unique Identifier (UUID) of the device’s hardware",
+                "Name": "HardwareUuid"
+            },
+            {
+                "Description": "The cloud platforms that the device belongs to—can be Azure, Amazon Web Services, Google Cloud Platform and Azure Arc",
+                "Name": "CloudPlatforms"
+            },
+            {
+                "Description": "Unique identifier assigned to the device in Azure",
+                "Name": "AzureVmId"
+            },
+            {
+                "Description": "Unique identifier of the Azure resource associated with the device.",
+                "Name": "AzureResourceId"
+            },
+            {
+                "Description": "Unique identifier of the Azure subscription associated with the device",
+                "Name": "AzureVmSubscriptionId"
+            },
+            {
+                "Description": "Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID",
+                "Name": "GcpFullResourceName"
+            },
+            {
+                "Description": "Unique identifier specific to Amazon Web Services devices, containing the Amazon Resource Name",
+                "Name": "AwsResourceName"
+            },
+            {
+                "Description": "Indicates whether this device is classified as short-lived or transient based on the frequency of appearance of the device on the network",
+                "Name": "IsTransient"
+            },
+            {
+                "Description": "Build revision number of the operating system running on the machine",
+                "Name": "OsBuildRevision"
+            },
+            {
+                "Description": "Device ID of the device running Windows Subsystem for Linux",
+                "Name": "HostDeviceId"
+            },
+            {
+                "Description": "Indicates the mitigation action applied to a device",
+                "Name": "MitigationStatus"
+            },
+            {
+                "Description": "Type of connectivity from the device to the cloud",
+                "Name": "ConnectivityType"
+            },
+            {
+                "Description": "Products or services that have seen or reported the device, including when they last reported it",
+                "Name": "DiscoverySources"
+            }
+        ],
+        "table": "DeviceInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Name of the network adapter",
+                "Name": "NetworkAdapterName"
+            },
+            {
+                "Description": "MAC address of the network adapter",
+                "Name": "MacAddress"
+            },
+            {
+                "Description": "Network adapter type",
+                "Name": "NetworkAdapterType"
+            },
+            {
+                "Description": "Operational status of the network adapter",
+                "Name": "NetworkAdapterStatus"
+            },
+            {
+                "Description": "Tunneling protocol, if the interface is used for this purpose, for example 6to4, Teredo, ISATAP, PPTP, SSTP, and SSH",
+                "Name": "TunnelType"
+            },
+            {
+                "Description": "Networks that the adapter is connected to. Each JSON element in the array contains the network name, category (public, private or domain), a description, and a flag indicating if it’s connected publicly to the internet",
+                "Name": "ConnectedNetworks"
+            },
+            {
+                "Description": "DNS server addresses in JSON array format",
+                "Name": "DnsAddresses"
+            },
+            {
+                "Description": "IPv4 address of DHCP server",
+                "Name": "IPv4Dhcp"
+            },
+            {
+                "Description": "IPv6 address of DHCP server",
+                "Name": "IPv6Dhcp"
+            },
+            {
+                "Description": "Default gateway addresses in JSON array format",
+                "Name": "DefaultGateways"
+            },
+            {
+                "Description": "JSON array containing all the IP addresses assigned to the adapter, along with their respective subnet prefix and the IP class (RFC 1918 & RFC 4291)",
+                "Name": "IPAddresses"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Name of the manufacturer or vendor of the network adapter",
+                "Name": "NetworkAdapterVendor"
+            }
+        ],
+        "table": "DeviceNetworkInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Name of the file that the recorded action was applied to",
+                "Name": "FileName"
+            },
+            {
+                "Description": "Folder containing the file that the recorded action was applied to",
+                "Name": "FolderPath"
+            },
+            {
+                "Description": "SHA-1 hash of the file that the recorded action was applied to",
+                "Name": "SHA1"
+            },
+            {
+                "Description": "SHA-256 of the file that the recorded action was applied to",
+                "Name": "SHA256"
+            },
+            {
+                "Description": "MD5 hash of the file that the recorded action was applied to",
+                "Name": "MD5"
+            },
+            {
+                "Description": "Size of the file in bytes",
+                "Name": "FileSize"
+            },
+            {
+                "Description": "Company name from the version information of the newly created process",
+                "Name": "ProcessVersionInfoCompanyName"
+            },
+            {
+                "Description": "Product name from the version information of the newly created process",
+                "Name": "ProcessVersionInfoProductName"
+            },
+            {
+                "Description": "Product version from the version information of the newly created process",
+                "Name": "ProcessVersionInfoProductVersion"
+            },
+            {
+                "Description": "Internal file name from the version information of the newly created process",
+                "Name": "ProcessVersionInfoInternalFileName"
+            },
+            {
+                "Description": "Original file name from the version information of the newly created process",
+                "Name": "ProcessVersionInfoOriginalFileName"
+            },
+            {
+                "Description": "Description from the version information of the newly created process",
+                "Name": "ProcessVersionInfoFileDescription"
+            },
+            {
+                "Description": "Process ID (PID) of the newly created process",
+                "Name": "ProcessId"
+            },
+            {
+                "Description": "Command line used to create the new process",
+                "Name": "ProcessCommandLine"
+            },
+            {
+                "Description": "Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources.",
+                "Name": "ProcessIntegrityLevel"
+            },
+            {
+                "Description": "Indicates the type of token elevation applied to the newly created process. Possible values: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (standard), and TokenElevationTypeFull (elevated)",
+                "Name": "ProcessTokenElevation"
+            },
+            {
+                "Description": "Date and time the process was created",
+                "Name": "ProcessCreationTime"
+            },
+            {
+                "Description": "Domain of the account",
+                "Name": "AccountDomain"
+            },
+            {
+                "Description": "User name of the account",
+                "Name": "AccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account",
+                "Name": "AccountSid"
+            },
+            {
+                "Description": "User principal name (UPN) of the account",
+                "Name": "AccountUpn"
+            },
+            {
+                "Description": "Unique identifier for the account in Microsoft Entra ID",
+                "Name": "AccountObjectId"
+            },
+            {
+                "Description": "Identifier for a logon session. This identifier is unique on the same machine only between restarts",
+                "Name": "LogonId"
+            },
+            {
+                "Description": "Domain of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountDomain"
+            },
+            {
+                "Description": "User name of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountSid"
+            },
+            {
+                "Description": "User principal name (UPN) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountUpn"
+            },
+            {
+                "Description": "Microsoft Entra object ID of the user account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountObjectId"
+            },
+            {
+                "Description": "Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts.",
+                "Name": "InitiatingProcessLogonId"
+            },
+            {
+                "Description": "Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.",
+                "Name": "InitiatingProcessIntegrityLevel"
+            },
+            {
+                "Description": "Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event",
+                "Name": "InitiatingProcessTokenElevation"
+            },
+            {
+                "Description": "SHA-1 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSHA1"
+            },
+            {
+                "Description": "SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.",
+                "Name": "InitiatingProcessSHA256"
+            },
+            {
+                "Description": "MD5 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessMD5"
+            },
+            {
+                "Description": "Name of the process file that initiated the event; if unavailable, the name of the process that initiated the event might be shown instead",
+                "Name": "InitiatingProcessFileName"
+            },
+            {
+                "Description": "Size of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFileSize"
+            },
+            {
+                "Description": "Company name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoCompanyName"
+            },
+            {
+                "Description": "Product name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductName"
+            },
+            {
+                "Description": "Product version from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductVersion"
+            },
+            {
+                "Description": "Internal file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoInternalFileName"
+            },
+            {
+                "Description": "Original file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoOriginalFileName"
+            },
+            {
+                "Description": "Description from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoFileDescription"
+            },
+            {
+                "Description": "Process ID (PID) of the process that initiated the event",
+                "Name": "InitiatingProcessId"
+            },
+            {
+                "Description": "Command line used to run the process that initiated the event",
+                "Name": "InitiatingProcessCommandLine"
+            },
+            {
+                "Description": "Date and time when the process that initiated the event was started",
+                "Name": "InitiatingProcessCreationTime"
+            },
+            {
+                "Description": "Folder containing the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFolderPath"
+            },
+            {
+                "Description": "Process ID (PID) of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentId"
+            },
+            {
+                "Description": "Name of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentFileName"
+            },
+            {
+                "Description": "Date and time when the parent of the process responsible for the event was started",
+                "Name": "InitiatingProcessParentCreationTime"
+            },
+            {
+                "Description": "Type of file signer of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSignerType"
+            },
+            {
+                "Description": "Information about the signature status of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSignatureStatus"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Identifier for the virtualized container used by Application Guard to isolate browser activity",
+                "Name": "AppGuardContainerId"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Windows session ID of the initiating process",
+                "Name": "InitiatingProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsInitiatingProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Windows session ID of the created process",
+                "Name": "CreatedProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the created process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the created process’s RDP session was initiated",
+                "Name": "ProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the created process’s RDP session was initiated",
+                "Name": "ProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Unique identifier of the process; this is equal to the Process Start Key in Windows devices",
+                "Name": "ProcessUniqueId"
+            },
+            {
+                "Description": "Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices",
+                "Name": "InitiatingProcessUniqueId"
+            }
+        ],
+        "table": "DeviceProcessEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "IP address that was being connected to",
+                "Name": "RemoteIP"
+            },
+            {
+                "Description": "TCP port on the remote device that was being connected to",
+                "Name": "RemotePort"
+            },
+            {
+                "Description": "URL or fully qualified domain name (FQDN) that was being connected to",
+                "Name": "RemoteUrl"
+            },
+            {
+                "Description": "IP address assigned to the local machine used during communication",
+                "Name": "LocalIP"
+            },
+            {
+                "Description": "TCP port on the local machine used during communication",
+                "Name": "LocalPort"
+            },
+            {
+                "Description": "Protocol used during the communication",
+                "Name": "Protocol"
+            },
+            {
+                "Description": "Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast",
+                "Name": "LocalIPType"
+            },
+            {
+                "Description": "Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast",
+                "Name": "RemoteIPType"
+            },
+            {
+                "Description": "SHA-1 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSHA1"
+            },
+            {
+                "Description": "SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.",
+                "Name": "InitiatingProcessSHA256"
+            },
+            {
+                "Description": "MD5 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessMD5"
+            },
+            {
+                "Description": "Name of the process file that initiated the event; if unavailable, the name of the process that initiated the event might be shown instead",
+                "Name": "InitiatingProcessFileName"
+            },
+            {
+                "Description": "Size of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFileSize"
+            },
+            {
+                "Description": "Company name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoCompanyName"
+            },
+            {
+                "Description": "Product name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductName"
+            },
+            {
+                "Description": "Product version from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductVersion"
+            },
+            {
+                "Description": "Internal file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoInternalFileName"
+            },
+            {
+                "Description": "Original file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoOriginalFileName"
+            },
+            {
+                "Description": "Description from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoFileDescription"
+            },
+            {
+                "Description": "Process ID (PID) of the process that initiated the event",
+                "Name": "InitiatingProcessId"
+            },
+            {
+                "Description": "Command line used to run the process that initiated the event",
+                "Name": "InitiatingProcessCommandLine"
+            },
+            {
+                "Description": "Date and time when the process that initiated the event was started",
+                "Name": "InitiatingProcessCreationTime"
+            },
+            {
+                "Description": "Folder containing the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFolderPath"
+            },
+            {
+                "Description": "Name of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentFileName"
+            },
+            {
+                "Description": "Process ID (PID) of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentId"
+            },
+            {
+                "Description": "Date and time when the parent of the process responsible for the event was started",
+                "Name": "InitiatingProcessParentCreationTime"
+            },
+            {
+                "Description": "Domain of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountDomain"
+            },
+            {
+                "Description": "User name of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountSid"
+            },
+            {
+                "Description": "User principal name (UPN) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountUpn"
+            },
+            {
+                "Description": "Microsoft Entra object ID of the user account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountObjectId"
+            },
+            {
+                "Description": "Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.",
+                "Name": "InitiatingProcessIntegrityLevel"
+            },
+            {
+                "Description": "Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event",
+                "Name": "InitiatingProcessTokenElevation"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Identifier for the virtualized container used by Application Guard to isolate browser activity",
+                "Name": "AppGuardContainerId"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Windows session ID of the initiating process",
+                "Name": "InitiatingProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsInitiatingProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices",
+                "Name": "InitiatingProcessUniqueId"
+            }
+        ],
+        "table": "DeviceNetworkEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Name of the file that the recorded action was applied to",
+                "Name": "FileName"
+            },
+            {
+                "Description": "Folder containing the file that the recorded action was applied to",
+                "Name": "FolderPath"
+            },
+            {
+                "Description": "SHA-1 hash of the file that the recorded action was applied to",
+                "Name": "SHA1"
+            },
+            {
+                "Description": "SHA-256 of the file that the recorded action was applied to",
+                "Name": "SHA256"
+            },
+            {
+                "Description": "MD5 hash of the file that the recorded action was applied to",
+                "Name": "MD5"
+            },
+            {
+                "Description": "URL where the file was downloaded from",
+                "Name": "FileOriginUrl"
+            },
+            {
+                "Description": "URL of the web page that links to the downloaded file",
+                "Name": "FileOriginReferrerUrl"
+            },
+            {
+                "Description": "IP address where the file was downloaded from",
+                "Name": "FileOriginIP"
+            },
+            {
+                "Description": "Original folder containing the file before the recorded action was applied",
+                "Name": "PreviousFolderPath"
+            },
+            {
+                "Description": "Original name of the file that was renamed as a result of the action",
+                "Name": "PreviousFileName"
+            },
+            {
+                "Description": "Size of the file in bytes",
+                "Name": "FileSize"
+            },
+            {
+                "Description": "Domain of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountDomain"
+            },
+            {
+                "Description": "User name of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountSid"
+            },
+            {
+                "Description": "User principal name (UPN) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountUpn"
+            },
+            {
+                "Description": "Microsoft Entra object ID of the user account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountObjectId"
+            },
+            {
+                "Description": "MD5 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessMD5"
+            },
+            {
+                "Description": "SHA-1 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSHA1"
+            },
+            {
+                "Description": "SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.",
+                "Name": "InitiatingProcessSHA256"
+            },
+            {
+                "Description": "Folder containing the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFolderPath"
+            },
+            {
+                "Description": "Name of the process file that initiated the event; if unavailable, the name of the process that initiated the event might be shown instead",
+                "Name": "InitiatingProcessFileName"
+            },
+            {
+                "Description": "Size of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFileSize"
+            },
+            {
+                "Description": "Company name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoCompanyName"
+            },
+            {
+                "Description": "Product name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductName"
+            },
+            {
+                "Description": "Product version from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductVersion"
+            },
+            {
+                "Description": "Internal file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoInternalFileName"
+            },
+            {
+                "Description": "Original file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoOriginalFileName"
+            },
+            {
+                "Description": "Description from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoFileDescription"
+            },
+            {
+                "Description": "Process ID (PID) of the process that initiated the event",
+                "Name": "InitiatingProcessId"
+            },
+            {
+                "Description": "Command line used to run the process that initiated the event",
+                "Name": "InitiatingProcessCommandLine"
+            },
+            {
+                "Description": "Date and time when the process that initiated the event was started",
+                "Name": "InitiatingProcessCreationTime"
+            },
+            {
+                "Description": "Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.",
+                "Name": "InitiatingProcessIntegrityLevel"
+            },
+            {
+                "Description": "Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event",
+                "Name": "InitiatingProcessTokenElevation"
+            },
+            {
+                "Description": "Process ID (PID) of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentId"
+            },
+            {
+                "Description": "Name of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentFileName"
+            },
+            {
+                "Description": "Date and time when the parent of the process responsible for the event was started",
+                "Name": "InitiatingProcessParentCreationTime"
+            },
+            {
+                "Description": "Network protocol, if applicable, used to initiate the activity: Unknown, Local, SMB, or NFS",
+                "Name": "RequestProtocol"
+            },
+            {
+                "Description": "IPv4 or IPv6 address of the remote device that initiated the activity",
+                "Name": "RequestSourceIP"
+            },
+            {
+                "Description": "Source port on the remote device that initiated the activity",
+                "Name": "RequestSourcePort"
+            },
+            {
+                "Description": "User name of account used to remotely initiate the activity",
+                "Name": "RequestAccountName"
+            },
+            {
+                "Description": "Domain of the account used to remotely initiate the activity",
+                "Name": "RequestAccountDomain"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account used to remotely initiate the activity",
+                "Name": "RequestAccountSid"
+            },
+            {
+                "Description": "Name of shared folder containing the file",
+                "Name": "ShareName"
+            },
+            {
+                "Description": "Label applied to an email, file, or other content to classify it for information protection",
+                "Name": "SensitivityLabel"
+            },
+            {
+                "Description": "Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently",
+                "Name": "SensitivitySubLabel"
+            },
+            {
+                "Description": "Indicates whether the file is encrypted by Azure Information Protection",
+                "Name": "IsAzureInfoProtectionApplied"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Identifier for the virtualized container used by Application Guard to isolate browser activity",
+                "Name": "AppGuardContainerId"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Windows session ID of the initiating process",
+                "Name": "InitiatingProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsInitiatingProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices",
+                "Name": "InitiatingProcessUniqueId"
+            }
+        ],
+        "table": "DeviceFileEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Registry key that the recorded action was applied to",
+                "Name": "RegistryKey"
+            },
+            {
+                "Description": "Data type, such as binary or string, of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueType"
+            },
+            {
+                "Description": "Name of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueName"
+            },
+            {
+                "Description": "Data of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueData"
+            },
+            {
+                "Description": "Original registry key before it was modified",
+                "Name": "PreviousRegistryKey"
+            },
+            {
+                "Description": "Original name of the registry value before it was modified",
+                "Name": "PreviousRegistryValueName"
+            },
+            {
+                "Description": "Original data of the registry value before it was modified",
+                "Name": "PreviousRegistryValueData"
+            },
+            {
+                "Description": "Domain of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountDomain"
+            },
+            {
+                "Description": "User name of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountSid"
+            },
+            {
+                "Description": "User principal name (UPN) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountUpn"
+            },
+            {
+                "Description": "Microsoft Entra object ID of the user account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountObjectId"
+            },
+            {
+                "Description": "SHA-1 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSHA1"
+            },
+            {
+                "Description": "SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.",
+                "Name": "InitiatingProcessSHA256"
+            },
+            {
+                "Description": "MD5 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessMD5"
+            },
+            {
+                "Description": "Name of the process file that initiated the event; if unavailable, the name of the process that initiated the event might be shown instead",
+                "Name": "InitiatingProcessFileName"
+            },
+            {
+                "Description": "Size of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFileSize"
+            },
+            {
+                "Description": "Company name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoCompanyName"
+            },
+            {
+                "Description": "Product name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductName"
+            },
+            {
+                "Description": "Product version from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductVersion"
+            },
+            {
+                "Description": "Internal file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoInternalFileName"
+            },
+            {
+                "Description": "Original file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoOriginalFileName"
+            },
+            {
+                "Description": "Description from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoFileDescription"
+            },
+            {
+                "Description": "Process ID (PID) of the process that initiated the event",
+                "Name": "InitiatingProcessId"
+            },
+            {
+                "Description": "Command line used to run the process that initiated the event",
+                "Name": "InitiatingProcessCommandLine"
+            },
+            {
+                "Description": "Date and time when the process that initiated the event was started",
+                "Name": "InitiatingProcessCreationTime"
+            },
+            {
+                "Description": "Folder containing the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFolderPath"
+            },
+            {
+                "Description": "Process ID (PID) of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentId"
+            },
+            {
+                "Description": "Name of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentFileName"
+            },
+            {
+                "Description": "Date and time when the parent of the process responsible for the event was started",
+                "Name": "InitiatingProcessParentCreationTime"
+            },
+            {
+                "Description": "Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.",
+                "Name": "InitiatingProcessIntegrityLevel"
+            },
+            {
+                "Description": "Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event",
+                "Name": "InitiatingProcessTokenElevation"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Identifier for the virtualized container used by Application Guard to isolate browser activity",
+                "Name": "AppGuardContainerId"
+            },
+            {
+                "Description": "Windows session ID of the initiating process",
+                "Name": "InitiatingProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsInitiatingProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices",
+                "Name": "InitiatingProcessUniqueId"
+            }
+        ],
+        "table": "DeviceRegistryEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service",
+                "Name": "LogonType"
+            },
+            {
+                "Description": "Domain of the account",
+                "Name": "AccountDomain"
+            },
+            {
+                "Description": "User name of the account",
+                "Name": "AccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account",
+                "Name": "AccountSid"
+            },
+            {
+                "Description": "Protocol used during the communication",
+                "Name": "Protocol"
+            },
+            {
+                "Description": "Information explaining why the recorded action failed",
+                "Name": "FailureReason"
+            },
+            {
+                "Description": "Boolean indicator of whether the user is a local administrator on the machine",
+                "Name": "IsLocalAdmin"
+            },
+            {
+                "Description": "Identifier for a logon session. This identifier is unique on the same machine only between restarts",
+                "Name": "LogonId"
+            },
+            {
+                "Description": "Name of the device that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information.",
+                "Name": "RemoteDeviceName"
+            },
+            {
+                "Description": "IP address that was being connected to",
+                "Name": "RemoteIP"
+            },
+            {
+                "Description": "Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast",
+                "Name": "RemoteIPType"
+            },
+            {
+                "Description": "TCP port on the remote device that was being connected to",
+                "Name": "RemotePort"
+            },
+            {
+                "Description": "Domain of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountDomain"
+            },
+            {
+                "Description": "User name of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountSid"
+            },
+            {
+                "Description": "User principal name (UPN) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountUpn"
+            },
+            {
+                "Description": "Microsoft Entra object ID of the user account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountObjectId"
+            },
+            {
+                "Description": "Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.",
+                "Name": "InitiatingProcessIntegrityLevel"
+            },
+            {
+                "Description": "Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event",
+                "Name": "InitiatingProcessTokenElevation"
+            },
+            {
+                "Description": "SHA-1 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSHA1"
+            },
+            {
+                "Description": "SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.",
+                "Name": "InitiatingProcessSHA256"
+            },
+            {
+                "Description": "MD5 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessMD5"
+            },
+            {
+                "Description": "Name of the process file that initiated the event; if unavailable, the name of the process that initiated the event might be shown instead",
+                "Name": "InitiatingProcessFileName"
+            },
+            {
+                "Description": "Size of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFileSize"
+            },
+            {
+                "Description": "Company name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoCompanyName"
+            },
+            {
+                "Description": "Product name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductName"
+            },
+            {
+                "Description": "Product version from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductVersion"
+            },
+            {
+                "Description": "Internal file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoInternalFileName"
+            },
+            {
+                "Description": "Original file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoOriginalFileName"
+            },
+            {
+                "Description": "Description from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoFileDescription"
+            },
+            {
+                "Description": "Process ID (PID) of the process that initiated the event",
+                "Name": "InitiatingProcessId"
+            },
+            {
+                "Description": "Command line used to run the process that initiated the event",
+                "Name": "InitiatingProcessCommandLine"
+            },
+            {
+                "Description": "Date and time when the process that initiated the event was started",
+                "Name": "InitiatingProcessCreationTime"
+            },
+            {
+                "Description": "Folder containing the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFolderPath"
+            },
+            {
+                "Description": "Process ID (PID) of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentId"
+            },
+            {
+                "Description": "Name of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentFileName"
+            },
+            {
+                "Description": "Date and time when the parent of the process responsible for the event was started",
+                "Name": "InitiatingProcessParentCreationTime"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Identifier for the virtualized container used by Application Guard to isolate browser activity",
+                "Name": "AppGuardContainerId"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Windows session ID of the initiating process",
+                "Name": "InitiatingProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsInitiatingProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices",
+                "Name": "InitiatingProcessUniqueId"
+            }
+        ],
+        "table": "DeviceLogonEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Name of the file that the recorded action was applied to",
+                "Name": "FileName"
+            },
+            {
+                "Description": "Folder containing the file that the recorded action was applied to",
+                "Name": "FolderPath"
+            },
+            {
+                "Description": "SHA-1 hash of the file that the recorded action was applied to",
+                "Name": "SHA1"
+            },
+            {
+                "Description": "SHA-256 of the file that the recorded action was applied to",
+                "Name": "SHA256"
+            },
+            {
+                "Description": "MD5 hash of the file that the recorded action was applied to",
+                "Name": "MD5"
+            },
+            {
+                "Description": "Size of the file in bytes",
+                "Name": "FileSize"
+            },
+            {
+                "Description": "Domain of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountDomain"
+            },
+            {
+                "Description": "User name of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountSid"
+            },
+            {
+                "Description": "User principal name (UPN) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountUpn"
+            },
+            {
+                "Description": "Microsoft Entra object ID of the user account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountObjectId"
+            },
+            {
+                "Description": "Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.",
+                "Name": "InitiatingProcessIntegrityLevel"
+            },
+            {
+                "Description": "Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event",
+                "Name": "InitiatingProcessTokenElevation"
+            },
+            {
+                "Description": "SHA-1 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSHA1"
+            },
+            {
+                "Description": "SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.",
+                "Name": "InitiatingProcessSHA256"
+            },
+            {
+                "Description": "MD5 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessMD5"
+            },
+            {
+                "Description": "Name of the process file that initiated the event; if unavailable, the name of the process that initiated the event might be shown instead",
+                "Name": "InitiatingProcessFileName"
+            },
+            {
+                "Description": "Size of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFileSize"
+            },
+            {
+                "Description": "Company name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoCompanyName"
+            },
+            {
+                "Description": "Product name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductName"
+            },
+            {
+                "Description": "Product version from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductVersion"
+            },
+            {
+                "Description": "Internal file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoInternalFileName"
+            },
+            {
+                "Description": "Original file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoOriginalFileName"
+            },
+            {
+                "Description": "Description from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoFileDescription"
+            },
+            {
+                "Description": "Process ID (PID) of the process that initiated the event",
+                "Name": "InitiatingProcessId"
+            },
+            {
+                "Description": "Command line used to run the process that initiated the event",
+                "Name": "InitiatingProcessCommandLine"
+            },
+            {
+                "Description": "Date and time when the process that initiated the event was started",
+                "Name": "InitiatingProcessCreationTime"
+            },
+            {
+                "Description": "Folder containing the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFolderPath"
+            },
+            {
+                "Description": "Process ID (PID) of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentId"
+            },
+            {
+                "Description": "Name of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentFileName"
+            },
+            {
+                "Description": "Date and time when the parent of the process responsible for the event was started",
+                "Name": "InitiatingProcessParentCreationTime"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Identifier for the virtualized container used by Application Guard to isolate browser activity",
+                "Name": "AppGuardContainerId"
+            },
+            {
+                "Description": "Windows session ID of the initiating process",
+                "Name": "InitiatingProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsInitiatingProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices",
+                "Name": "InitiatingProcessUniqueId"
+            }
+        ],
+        "table": "DeviceImageLoadEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Name of the file that the recorded action was applied to",
+                "Name": "FileName"
+            },
+            {
+                "Description": "Folder containing the file that the recorded action was applied to",
+                "Name": "FolderPath"
+            },
+            {
+                "Description": "SHA-1 hash of the file that the recorded action was applied to",
+                "Name": "SHA1"
+            },
+            {
+                "Description": "SHA-256 of the file that the recorded action was applied to",
+                "Name": "SHA256"
+            },
+            {
+                "Description": "MD5 hash of the file that the recorded action was applied to",
+                "Name": "MD5"
+            },
+            {
+                "Description": "Size of the file in bytes",
+                "Name": "FileSize"
+            },
+            {
+                "Description": "Domain of the account",
+                "Name": "AccountDomain"
+            },
+            {
+                "Description": "User name of the account",
+                "Name": "AccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account",
+                "Name": "AccountSid"
+            },
+            {
+                "Description": "URL or fully qualified domain name (FQDN) that was being connected to",
+                "Name": "RemoteUrl"
+            },
+            {
+                "Description": "Name of the device that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information.",
+                "Name": "RemoteDeviceName"
+            },
+            {
+                "Description": "Process ID (PID) of the newly created process",
+                "Name": "ProcessId"
+            },
+            {
+                "Description": "Command line used to create the new process",
+                "Name": "ProcessCommandLine"
+            },
+            {
+                "Description": "Date and time the process was created",
+                "Name": "ProcessCreationTime"
+            },
+            {
+                "Description": "Indicates the type of token elevation applied to the newly created process. Possible values: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (standard), and TokenElevationTypeFull (elevated)",
+                "Name": "ProcessTokenElevation"
+            },
+            {
+                "Description": "Identifier for a logon session. This identifier is unique on the same machine only between restarts",
+                "Name": "LogonId"
+            },
+            {
+                "Description": "Registry key that the recorded action was applied to",
+                "Name": "RegistryKey"
+            },
+            {
+                "Description": "Name of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueName"
+            },
+            {
+                "Description": "Data of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueData"
+            },
+            {
+                "Description": "IP address that was being connected to",
+                "Name": "RemoteIP"
+            },
+            {
+                "Description": "TCP port on the remote device that was being connected to",
+                "Name": "RemotePort"
+            },
+            {
+                "Description": "IP address assigned to the local machine used during communication",
+                "Name": "LocalIP"
+            },
+            {
+                "Description": "TCP port on the local machine used during communication",
+                "Name": "LocalPort"
+            },
+            {
+                "Description": "URL where the file was downloaded from",
+                "Name": "FileOriginUrl"
+            },
+            {
+                "Description": "IP address where the file was downloaded from",
+                "Name": "FileOriginIP"
+            },
+            {
+                "Description": "SHA-1 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessSHA1"
+            },
+            {
+                "Description": "SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.",
+                "Name": "InitiatingProcessSHA256"
+            },
+            {
+                "Description": "MD5 hash of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessMD5"
+            },
+            {
+                "Description": "Name of the process file that initiated the event; if unavailable, the name of the process that initiated the event might be shown instead",
+                "Name": "InitiatingProcessFileName"
+            },
+            {
+                "Description": "Size of the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFileSize"
+            },
+            {
+                "Description": "Folder containing the process (image file) that initiated the event",
+                "Name": "InitiatingProcessFolderPath"
+            },
+            {
+                "Description": "Process ID (PID) of the process that initiated the event",
+                "Name": "InitiatingProcessId"
+            },
+            {
+                "Description": "Command line used to run the process that initiated the event",
+                "Name": "InitiatingProcessCommandLine"
+            },
+            {
+                "Description": "Date and time when the process that initiated the event was started",
+                "Name": "InitiatingProcessCreationTime"
+            },
+            {
+                "Description": "Domain of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountDomain"
+            },
+            {
+                "Description": "User name of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountName"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountSid"
+            },
+            {
+                "Description": "User principal name (UPN) of the account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountUpn"
+            },
+            {
+                "Description": "Microsoft Entra object ID of the user account that ran the process responsible for the event",
+                "Name": "InitiatingProcessAccountObjectId"
+            },
+            {
+                "Description": "Company name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoCompanyName"
+            },
+            {
+                "Description": "Product name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductName"
+            },
+            {
+                "Description": "Product version from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoProductVersion"
+            },
+            {
+                "Description": "Internal file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoInternalFileName"
+            },
+            {
+                "Description": "Original file name from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoOriginalFileName"
+            },
+            {
+                "Description": "Description from the version information of the process (image file) responsible for the event",
+                "Name": "InitiatingProcessVersionInfoFileDescription"
+            },
+            {
+                "Description": "Process ID (PID) of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentId"
+            },
+            {
+                "Description": "Name of the parent process that spawned the process responsible for the event",
+                "Name": "InitiatingProcessParentFileName"
+            },
+            {
+                "Description": "Date and time when the parent of the process responsible for the event was started",
+                "Name": "InitiatingProcessParentCreationTime"
+            },
+            {
+                "Description": "Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts.",
+                "Name": "InitiatingProcessLogonId"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            },
+            {
+                "Description": "Identifier for the virtualized container used by Application Guard to isolate browser activity",
+                "Name": "AppGuardContainerId"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Windows session ID of the initiating process",
+                "Name": "InitiatingProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsInitiatingProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the initiating process’s RDP session was initiated",
+                "Name": "InitiatingProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Windows session ID of the created process",
+                "Name": "CreatedProcessSessionId"
+            },
+            {
+                "Description": "Indicates whether the created process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+                "Name": "IsProcessRemoteSession"
+            },
+            {
+                "Description": "Device name of the remote device from which the created process’s RDP session was initiated",
+                "Name": "ProcessRemoteSessionDeviceName"
+            },
+            {
+                "Description": "IP address of the remote device from which the created process’s RDP session was initiated",
+                "Name": "ProcessRemoteSessionIP"
+            },
+            {
+                "Description": "Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices",
+                "Name": "InitiatingProcessUniqueId"
+            }
+        ],
+        "table": "DeviceEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "SHA-1 hash of the file that the recorded action was applied to",
+                "Name": "SHA1"
+            },
+            {
+                "Description": "Indicates whether the file is signed",
+                "Name": "IsSigned"
+            },
+            {
+                "Description": "Indicates whether signature information was read as embedded content in the file itself or read from an external catalog file",
+                "Name": "SignatureType"
+            },
+            {
+                "Description": "Information about the signer of the file",
+                "Name": "Signer"
+            },
+            {
+                "Description": "Unique hash value identifying the signer",
+                "Name": "SignerHash"
+            },
+            {
+                "Description": "Information about the issuing certificate authority (CA)",
+                "Name": "Issuer"
+            },
+            {
+                "Description": "Unique hash value identifying issuing certificate authority (CA)",
+                "Name": "IssuerHash"
+            },
+            {
+                "Description": "Identifier for the certificate that is unique to the issuing certificate authority (CA)",
+                "Name": "CertificateSerialNumber"
+            },
+            {
+                "Description": "JSON array listing the URLs of network shares that contain certificates and certificate revocation lists (CRLs)",
+                "Name": "CrlDistributionPointUrls"
+            },
+            {
+                "Description": "Date and time the certificate was created",
+                "Name": "CertificateCreationTime"
+            },
+            {
+                "Description": "Date and time the certificate is set to expire",
+                "Name": "CertificateExpirationTime"
+            },
+            {
+                "Description": "Date and time the certificate was countersigned",
+                "Name": "CertificateCountersignatureTime"
+            },
+            {
+                "Description": "Indicates whether the file is trusted based on the results of the WinVerifyTrust function, which checks for unknown root certificate information, invalid signatures, revoked certificates, and other questionable attributes",
+                "Name": "IsTrusted"
+            },
+            {
+                "Description": "Indicates whether the signer of the root certificate is Microsoft",
+                "Name": "IsRootSignerMicrosoft"
+            },
+            {
+                "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+                "Name": "ReportId"
+            }
+        ],
+        "table": "DeviceFileCertificateInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "Version of the operating system running on the machine",
+                "Name": "OSVersion"
+            },
+            {
+                "Description": "Architecture of the operating system running on the machine",
+                "Name": "OSArchitecture"
+            },
+            {
+                "Description": "Name of the software vendor",
+                "Name": "SoftwareVendor"
+            },
+            {
+                "Description": "Name of the software product",
+                "Name": "SoftwareName"
+            },
+            {
+                "Description": "Version number of the software product",
+                "Name": "SoftwareVersion"
+            },
+            {
+                "Description": "Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system",
+                "Name": "CveId"
+            },
+            {
+                "Description": "Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape",
+                "Name": "VulnerabilitySeverityLevel"
+            },
+            {
+                "Description": "Name or description of the security update provided by the software vendor to address the vulnerability",
+                "Name": "RecommendedSecurityUpdate"
+            },
+            {
+                "Description": "Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles",
+                "Name": "RecommendedSecurityUpdateId"
+            },
+            {
+                "Description": "Array of tags relevant to the CVE; example: ZeroDay, NoSecurityUpdate",
+                "Name": "CveTags"
+            },
+            {
+                "Description": "Indicates the status of the workaround mitigation for the CVE on this device (possible values: applied, not applied, partially applied, pending reboot)",
+                "Name": "CveMitigationStatus"
+            }
+        ],
+        "table": "DeviceTvmSoftwareVulnerabilities"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system",
+                "Name": "CveId"
+            },
+            {
+                "Description": "Severity score assigned to the security vulnerability under the Common Vulnerability Scoring System (CVSS)",
+                "Name": "CvssScore"
+            },
+            {
+                "Description": "Cvss Vector is a compressed textual representation that reflects the values used to derive the score",
+                "Name": "CvssVector"
+            },
+            {
+                "Description": "Cve Supportability is an indicator to indicate whether Microsoft supports the Cve or supports it in a Premium plan",
+                "Name": "CveSupportability"
+            },
+            {
+                "Description": "Indicates whether exploit code for the vulnerability is publicly available",
+                "Name": "IsExploitAvailable"
+            },
+            {
+                "Description": "Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape",
+                "Name": "VulnerabilitySeverityLevel"
+            },
+            {
+                "Description": "Date and time the item or related metadata was last modified",
+                "Name": "LastModifiedTime"
+            },
+            {
+                "Description": "Date vulnerability was disclosed to the public",
+                "Name": "PublishedDate"
+            },
+            {
+                "Description": "Description of the vulnerability and associated risks",
+                "Name": "VulnerabilityDescription"
+            },
+            {
+                "Description": "List of all software products affected by the vulnerability",
+                "Name": "AffectedSoftware"
+            },
+            {
+                "Description": "Represents the probability that a vulnerability will be exploited. This probability is expressed as a number between 0 and 1 (0%-100%) according to the EPSS model.",
+                "Name": "EpssScore"
+            }
+        ],
+        "table": "DeviceTvmSoftwareVulnerabilitiesKB"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for a specific configuration",
+                "Name": "ConfigurationId"
+            },
+            {
+                "Description": "Category or grouping to which the configuration belongs",
+                "Name": "ConfigurationCategory"
+            },
+            {
+                "Description": "Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.",
+                "Name": "ConfigurationSubcategory"
+            },
+            {
+                "Description": "Rated impact of the configuration to the overall configuration score (1-10)",
+                "Name": "ConfigurationImpact"
+            },
+            {
+                "Description": "Indicates whether the configuration or policy is properly configured",
+                "Name": "IsCompliant"
+            },
+            {
+                "Description": "Indicates whether the configuration or policy is applicable",
+                "Name": "IsApplicable"
+            },
+            {
+                "Description": "Configuration context data of the machine",
+                "Name": "Context"
+            },
+            {
+                "Description": "Indicates whether there will be user impact if the configuration will be applied",
+                "Name": "IsExpectedUserImpact"
+            }
+        ],
+        "table": "DeviceTvmSecureConfigurationAssessment"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for a specific configuration",
+                "Name": "ConfigurationId"
+            },
+            {
+                "Description": "Rated impact of the configuration to the overall configuration score (1-10)",
+                "Name": "ConfigurationImpact"
+            },
+            {
+                "Description": "Display name of the configuration",
+                "Name": "ConfigurationName"
+            },
+            {
+                "Description": "Description of the configuration",
+                "Name": "ConfigurationDescription"
+            },
+            {
+                "Description": "Description of any associated risks",
+                "Name": "RiskDescription"
+            },
+            {
+                "Description": "Category or grouping to which the configuration belongs",
+                "Name": "ConfigurationCategory"
+            },
+            {
+                "Description": "Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.",
+                "Name": "ConfigurationSubcategory"
+            },
+            {
+                "Description": "List of industry benchmarks recommending the same or similar configuration",
+                "Name": "ConfigurationBenchmarks"
+            },
+            {
+                "Description": "Labels representing various attributes used to identify or categorize a security configuration",
+                "Name": "Tags"
+            },
+            {
+                "Description": "Recommended actions to reduce or address any associated risks",
+                "Name": "RemediationOptions"
+            }
+        ],
+        "table": "DeviceTvmSecureConfigurationAssessmentKB"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "Version of the operating system running on the machine",
+                "Name": "OSVersion"
+            },
+            {
+                "Description": "Unique identifier for a specific configuration",
+                "Name": "ConfigurationId"
+            },
+            {
+                "Description": "Unique identifier for the profile",
+                "Name": "ProfileId"
+            },
+            {
+                "Description": "Indicates whether the device that initiated the event is compliant or not",
+                "Name": "IsCompliant"
+            },
+            {
+                "Description": "Indicates whether the configuration or policy is applicable",
+                "Name": "IsApplicable"
+            },
+            {
+                "Description": "The registry path or other location used to determine the current device setting",
+                "Name": "Source"
+            },
+            {
+                "Description": "Set of expected values for the current device setting to be complaint",
+                "Name": "RecommendedValue"
+            },
+            {
+                "Description": "Set of detected values found on the device",
+                "Name": "CurrentValue"
+            },
+            {
+                "Description": "Indicates whether the device is exempt from having the baseline configuration",
+                "Name": "IsExempt"
+            }
+        ],
+        "table": "DeviceBaselineComplianceAssessment"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for a specific configuration",
+                "Name": "ConfigurationId"
+            },
+            {
+                "Description": "Display name of the configuration",
+                "Name": "ConfigurationName"
+            },
+            {
+                "Description": "Description of the configuration",
+                "Name": "ConfigurationDescription"
+            },
+            {
+                "Description": "Description of any associated risks and rationale behind the configuration",
+                "Name": "ConfigurationRationale"
+            },
+            {
+                "Description": "Category or grouping to which the configuration belongs",
+                "Name": "ConfigurationCategory"
+            },
+            {
+                "Description": "List of benchmark compliance levels for which the configuration is applicable",
+                "Name": "BenchmarkProfileLevels"
+            },
+            {
+                "Description": "Unique Common Configuration Enumeration (CCE) identifier for the configuration",
+                "Name": "CCEReference"
+            },
+            {
+                "Description": "Recommended actions to reduce or address any associated risks",
+                "Name": "RemediationOptions"
+            },
+            {
+                "Description": "Industry benchmark recommending the configuration",
+                "Name": "ConfigurationBenchmark"
+            },
+            {
+                "Description": "The registry path or other location used to determine the current device setting",
+                "Name": "Source"
+            },
+            {
+                "Description": "Set of expected values for the current device setting to be complaint",
+                "Name": "RecommendedValue"
+            }
+        ],
+        "table": "DeviceBaselineComplianceAssessmentKB"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the profile",
+                "Name": "ProfileId"
+            },
+            {
+                "Description": "Display name of the profile",
+                "Name": "ProfileName"
+            },
+            {
+                "Description": "Optional description providing additional information related to the profile",
+                "Name": "ProfileDescription"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "Version of the operating system running on the machine",
+                "Name": "OSVersion"
+            },
+            {
+                "Description": "Industry benchmark on top of which the profile was created",
+                "Name": "BaseBenchmark"
+            },
+            {
+                "Description": "Version of the industry benchmark on top of which the profile was created",
+                "Name": "BenchmarkVersion"
+            },
+            {
+                "Description": "Benchmark compliance level set for the profile",
+                "Name": "BenchmarkProfileLevel"
+            },
+            {
+                "Description": "Indicator of the profile status - can be Enabled or Disabled",
+                "Name": "Status"
+            },
+            {
+                "Description": "Identity of the user account who created the profile",
+                "Name": "CreatedBy"
+            },
+            {
+                "Description": "Date and time when the profile was created",
+                "Name": "CreatedOn"
+            },
+            {
+                "Description": "Identity of the user account who last updated the profile",
+                "Name": "LastUpdatedBy"
+            },
+            {
+                "Description": "Date and time when the profile was last updated",
+                "Name": "LastUpdatedOn"
+            }
+        ],
+        "table": "DeviceBaselineComplianceProfiles"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "Version of the operating system running on the machine",
+                "Name": "OSVersion"
+            },
+            {
+                "Description": "Architecture of the operating system running on the machine",
+                "Name": "OSArchitecture"
+            },
+            {
+                "Description": "Name of the software vendor",
+                "Name": "SoftwareVendor"
+            },
+            {
+                "Description": "Name of the software product",
+                "Name": "SoftwareName"
+            },
+            {
+                "Description": "Version number of the software product",
+                "Name": "SoftwareVersion"
+            },
+            {
+                "Description": "Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date",
+                "Name": "EndOfSupportStatus"
+            },
+            {
+                "Description": "End-of-support (EOS) or end-of-life (EOL) date of the software product",
+                "Name": "EndOfSupportDate"
+            },
+            {
+                "Description": "The standard Common Platform Enumeration (CPE) name of the software product version",
+                "Name": "ProductCodeCpe"
+            }
+        ],
+        "table": "DeviceTvmSoftwareInventory"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Unique identifier for the certificate",
+                "Name": "Thumbprint"
+            },
+            {
+                "Description": "The location of the certificate",
+                "Name": "Path"
+            },
+            {
+                "Description": "Unique identifier for the certificate within a certificate authority's systems",
+                "Name": "SerialNumber"
+            },
+            {
+                "Description": "Entity that a certificate belongs to; can be a device, an individual, or an organization",
+                "Name": "IssuedTo"
+            },
+            {
+                "Description": "Entity that verified the information and signed the certificate",
+                "Name": "IssuedBy"
+            },
+            {
+                "Description": "Easy-to-understand version of a certificate's title",
+                "Name": "FriendlyName"
+            },
+            {
+                "Description": "Hashing algorithm and encryption algorithm used",
+                "Name": "SignatureAlgorithm"
+            },
+            {
+                "Description": "Size of the key used in the signature algorithm",
+                "Name": "KeySize"
+            },
+            {
+                "Description": "The date and time beyond which the certificate is no longer valid",
+                "Name": "ExpirationDate"
+            },
+            {
+                "Description": "The earliest date and time when the certificate became valid",
+                "Name": "IssueDate"
+            },
+            {
+                "Description": "Indicates if the holder of the certificate is a CA or end entity",
+                "Name": "SubjectType"
+            },
+            {
+                "Description": "The valid cryptographic uses of the certificate's public key",
+                "Name": "KeyUsage"
+            },
+            {
+                "Description": "Other valid uses for the certificate",
+                "Name": "ExtendedKeyUsage"
+            }
+        ],
+        "table": "DeviceTvmCertificateInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Date and time when the service last saw the device",
+                "Name": "LastSeenTime"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            }
+        ],
+        "table": "DeviceTvmInfoGathering"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the piece of information gathered",
+                "Name": "IgId"
+            },
+            {
+                "Description": "Name of the field where this information appears in the AdditionalFields column of the DeviceTvmInfoGathering table",
+                "Name": "FieldName"
+            },
+            {
+                "Description": "Description of the information gathered",
+                "Name": "Description"
+            },
+            {
+                "Description": "List of categories that the information belongs to, in JSON array format",
+                "Name": "Categories"
+            },
+            {
+                "Description": "The data structure of the information gathered",
+                "Name": "DataStructure"
+            }
+        ],
+        "table": "DeviceTvmInfoGatheringKB"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Name of the software vendor",
+                "Name": "SoftwareVendor"
+            },
+            {
+                "Description": "Name of the software product",
+                "Name": "SoftwareName"
+            },
+            {
+                "Description": "Version number of the software product",
+                "Name": "SoftwareVersion"
+            },
+            {
+                "Description": "Registry paths on which evidence indicating the existence of a software on a device was detected",
+                "Name": "RegistryPaths"
+            },
+            {
+                "Description": "Disk paths on which file level evidence indicating the existence of a software on a device was detected",
+                "Name": "DiskPaths"
+            },
+            {
+                "Description": "Date and time when the service last saw the device",
+                "Name": "LastSeenTime"
+            }
+        ],
+        "table": "DeviceTvmSoftwareEvidenceBeta"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Name of the web browser with the extension",
+                "Name": "BrowserName"
+            },
+            {
+                "Description": "Unique identifier for the browser extension",
+                "Name": "ExtensionId"
+            },
+            {
+                "Description": "Name of the extension",
+                "Name": "ExtensionName"
+            },
+            {
+                "Description": "Description from the publisher about the extension",
+                "Name": "ExtensionDescription"
+            },
+            {
+                "Description": "Version number of the extension",
+                "Name": "ExtensionVersion"
+            },
+            {
+                "Description": "Risk level for the extension based on the permissions it has requested",
+                "Name": "ExtensionRisk"
+            },
+            {
+                "Description": "Name of the vendor offering the extension",
+                "Name": "ExtensionVendor"
+            },
+            {
+                "Description": "Whether the extension is turned on or off on the devices",
+                "Name": "IsActivated"
+            },
+            {
+                "Description": "Date and time when the browser extension was first installed",
+                "Name": "InstallationTime"
+            }
+        ],
+        "table": "DeviceTvmBrowserExtensions"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Name of the web browser with the extension",
+                "Name": "BrowserName"
+            },
+            {
+                "Description": "Unique identifier for the browser extension",
+                "Name": "ExtensionId"
+            },
+            {
+                "Description": "Name of the extension",
+                "Name": "ExtensionName"
+            },
+            {
+                "Description": "Description from the publisher about the extension",
+                "Name": "ExtensionDescription"
+            },
+            {
+                "Description": "Version number of the extension",
+                "Name": "ExtensionVersion"
+            },
+            {
+                "Description": "Risk level for the extension based on the permissions it has requested",
+                "Name": "ExtensionRisk"
+            },
+            {
+                "Description": "Unique identifier for the permission",
+                "Name": "PermissionId"
+            },
+            {
+                "Description": "Name given to each permission based on what the extension is asking for",
+                "Name": "PermissionName"
+            },
+            {
+                "Description": "Explanation of what the permission is supposed to do",
+                "Name": "PermissionDescription"
+            },
+            {
+                "Description": "Risk level for the permission based on the type of access it would allow",
+                "Name": "PermissionRisk"
+            },
+            {
+                "Description": "Whether the permission is required for the extension to run, or optional",
+                "Name": "IsPermissionRequired"
+            }
+        ],
+        "table": "DeviceTvmBrowserExtensionsKB"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Type of hardware or firmware component",
+                "Name": "ComponentType"
+            },
+            {
+                "Description": "Manufacturer of hardware or firmware component",
+                "Name": "Manufacturer"
+            },
+            {
+                "Description": "Name of hardware or firmware component",
+                "Name": "ComponentName"
+            },
+            {
+                "Description": "Component family or class, a grouping of components that have similar features or characteristics as determined by the manufacturer",
+                "Name": "ComponentFamily"
+            },
+            {
+                "Description": "Component version (e.g., BIOS version)",
+                "Name": "ComponentVersion"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            }
+        ],
+        "table": "DeviceTvmHardwareFirmware"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Cloud enviorment source of the cloud audit event. Cloud be Azure, AWS, GCP, AliCloud or other",
+                "Name": "AuditSource"
+            },
+            {
+                "Description": "Data source of the cloud audit event. Could be Azure ARM Logs, AWS CloudTrail, GCP Logging or other",
+                "Name": "DataSource"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Audit event operation name as appeared in the raw event columns. Usually includes both resource type and operation",
+                "Name": "OperationName"
+            },
+            {
+                "Description": "An identifier for the Azure cloud resource as found by Microsoft Defender for Cloud.",
+                "Name": "AzureResourceId"
+            },
+            {
+                "Description": "An identifier for the Aws cloud resource as found by Microsoft Defender for Cloud.",
+                "Name": "AwsResourceName"
+            },
+            {
+                "Description": "An identifier for the Google cloud resource as found by Microsoft Defender for Cloud.",
+                "Name": "GcpFullResourceName"
+            },
+            {
+                "Description": "An identifier for the account as found by Microsoft Defender for Cloud. Could be Microsoft Entra ID, user principal name, IaM role or other identifiers",
+                "Name": "Account"
+            },
+            {
+                "Description": "The client IP address used to access the cloud resource or control plane",
+                "Name": "IPAddress"
+            },
+            {
+                "Description": "Indicates whether the IP address belongs to a known anonymous proxy",
+                "Name": "IsAnonymousProxy"
+            },
+            {
+                "Description": "Two-letter code indicating the country where the client IP address is geolocated",
+                "Name": "CountryCode"
+            },
+            {
+                "Description": "City where the client IP address is geolocated",
+                "Name": "City"
+            },
+            {
+                "Description": "Internet service provider associated with  the IP address",
+                "Name": "ISP"
+            },
+            {
+                "Description": "User agent information from the web browser or other client application",
+                "Name": "UserAgent"
+            },
+            {
+                "Description": "Raw event information from the source application or service in JSON format",
+                "Name": "RawEventData"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            }
+        ],
+        "table": "CloudAuditEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier of the Azure resource associated with the process",
+                "Name": "AzureResourceId"
+            },
+            {
+                "Description": "Unique identifier specific to Amazon Web Services devices, containing the Amazon resource name",
+                "Name": "AwsResourceName"
+            },
+            {
+                "Description": "Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID for GCP",
+                "Name": "GcpFullResourceName"
+            },
+            {
+                "Description": "The container image name or ID, if it exists",
+                "Name": "ContainerImageName"
+            },
+            {
+                "Description": "The Kubernetes namespace name",
+                "Name": "KubernetesNamespace"
+            },
+            {
+                "Description": "The Kubernetes pod name",
+                "Name": "KubernetesPodName"
+            },
+            {
+                "Description": "Unique identifier for the Kubernetes resource that includes the namespace, resource type and name",
+                "Name": "KubernetesResource"
+            },
+            {
+                "Description": "Name of the container in Kubernetes or another runtime environment",
+                "Name": "ContainerName"
+            },
+            {
+                "Description": "The container identifier in Kubernetes or another runtime environment",
+                "Name": "ContainerId"
+            },
+            {
+                "Description": "Type of activity that triggered the event",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Name of the file that the recorded action was applied to",
+                "Name": "FileName"
+            },
+            {
+                "Description": "Folder containing the file that the recorded action was applied to",
+                "Name": "FolderPath"
+            },
+            {
+                "Description": "Process ID (PID) of the newly created process",
+                "Name": "ProcessId"
+            },
+            {
+                "Description": "The name of the process",
+                "Name": "ProcessName"
+            },
+            {
+                "Description": "The name of the parent process",
+                "Name": "ParentProcessName"
+            },
+            {
+                "Description": "The process ID (PID) of the parent process",
+                "Name": "ParentProcessId"
+            },
+            {
+                "Description": "Command line used to create the new process",
+                "Name": "ProcessCommandLine"
+            },
+            {
+                "Description": "Date and time the process was created",
+                "Name": "ProcessCreationTime"
+            },
+            {
+                "Description": "Current working directory of the running process",
+                "Name": "ProcessCurrentWorkingDirectory"
+            },
+            {
+                "Description": "User name of the account",
+                "Name": "AccountName"
+            },
+            {
+                "Description": "Identifier for a logon session. This identifier is unique on the same machine only between restarts",
+                "Name": "LogonId"
+            },
+            {
+                "Description": "Process ID (PID) of the process that initiated the event",
+                "Name": "InitiatingProcessId"
+            },
+            {
+                "Description": "Additional information about the entity or event",
+                "Name": "AdditionalFields"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            }
+        ],
+        "table": "CloudProcessEvents"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique node identifier",
+                "Name": "NodeId"
+            },
+            {
+                "Description": "Label of node",
+                "Name": "NodeLabel"
+            },
+            {
+                "Description": "Node display name",
+                "Name": "NodeName"
+            },
+            {
+                "Description": "Categories of the node",
+                "Name": "Categories"
+            },
+            {
+                "Description": "Properties of the node, including insights related to the resource, such as whether the resource is exposed to the internet, or vulnerable to remote code execution",
+                "Name": "NodeProperties"
+            },
+            {
+                "Description": "All known node identifiers",
+                "Name": "EntityIds"
+            }
+        ],
+        "table": "ExposureGraphNodes"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Unique edge id Unique identifier for the relationship/edge",
+                "Name": "EdgeId"
+            },
+            {
+                "Description": "Label of edge",
+                "Name": "EdgeLabel"
+            },
+            {
+                "Description": "Node ID of the edge's source",
+                "Name": "SourceNodeId"
+            },
+            {
+                "Description": "Display name of source node",
+                "Name": "SourceNodeName"
+            },
+            {
+                "Description": "Label of the edge source node",
+                "Name": "SourceNodeLabel"
+            },
+            {
+                "Description": "Categories of the source node",
+                "Name": "SourceNodeCategories"
+            },
+            {
+                "Description": "Node ID of the edge's target",
+                "Name": "TargetNodeId"
+            },
+            {
+                "Description": "Display name of target node",
+                "Name": "TargetNodeName"
+            },
+            {
+                "Description": "Label of the edge target node",
+                "Name": "TargetNodeLabel"
+            },
+            {
+                "Description": "Categories of the target node",
+                "Name": "TargetNodeCategories"
+            },
+            {
+                "Description": "Optional data relevant for the relationship between the nodes",
+                "Name": "EdgeProperties"
+            }
+        ],
+        "table": "ExposureGraphEdges"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Application that performed the recorded action",
+                "Name": "Application"
+            },
+            {
+                "Description": "Unique identifier for the application ",
+                "Name": "ApplicationId"
+            },
+            {
+                "Description": "Indicates whether the sign-in was initiated by a managed identity",
+                "Name": "IsManagedIdentity"
+            },
+            {
+                "Description": "Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit https://aka.ms/AADsigninsErrorCodes",
+                "Name": "ErrorCode"
+            },
+            {
+                "Description": "Unique identifier of the sign-in event",
+                "Name": "CorrelationId"
+            },
+            {
+                "Description": "Name of the service principal that initiated the sign-in",
+                "Name": "ServicePrincipalName"
+            },
+            {
+                "Description": "Unique identifier of the service principal that initiated the sign-in",
+                "Name": "ServicePrincipalId"
+            },
+            {
+                "Description": "Display name of the resource accessed. The display name can contain any character.",
+                "Name": "ResourceDisplayName"
+            },
+            {
+                "Description": "Unique identifier of the resource accessed",
+                "Name": "ResourceId"
+            },
+            {
+                "Description": "Unique identifier of the tenant of the resource accessed",
+                "Name": "ResourceTenantId"
+            },
+            {
+                "Description": "IP address assigned to the device during communication",
+                "Name": "IPAddress"
+            },
+            {
+                "Description": "Country/Region where the account user is located",
+                "Name": "Country"
+            },
+            {
+                "Description": "State where the sign-in occurred, if available",
+                "Name": "State"
+            },
+            {
+                "Description": "City where the client IP address is geolocated",
+                "Name": "City"
+            },
+            {
+                "Description": "The north to south coordinates of the sign-in location",
+                "Name": "Latitude"
+            },
+            {
+                "Description": "The east to west coordinates of the sign-in location",
+                "Name": "Longitude"
+            },
+            {
+                "Description": "Unique identifier of the request",
+                "Name": "RequestId"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            }
+        ],
+        "table": "AADSpnSignInEventsBeta"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Application that performed the recorded action",
+                "Name": "Application"
+            },
+            {
+                "Description": "Unique identifier for the application ",
+                "Name": "ApplicationId"
+            },
+            {
+                "Description": "Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service",
+                "Name": "LogonType"
+            },
+            {
+                "Description": "Information about the Microsoft Entra ID endpoint that the request was sent to and the type of request sent during sign in",
+                "Name": "EndpointCall"
+            },
+            {
+                "Description": "Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit https://aka.ms/AADsigninsErrorCodes",
+                "Name": "ErrorCode"
+            },
+            {
+                "Description": "Unique identifier of the sign-in event",
+                "Name": "CorrelationId"
+            },
+            {
+                "Description": "Unique number assigned to a user by a website's server for the duration of the visit or session",
+                "Name": "SessionId"
+            },
+            {
+                "Description": "Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.",
+                "Name": "AccountDisplayName"
+            },
+            {
+                "Description": "Unique identifier for the account in Microsoft Entra ID",
+                "Name": "AccountObjectId"
+            },
+            {
+                "Description": "User principal name (UPN) of the account",
+                "Name": "AccountUpn"
+            },
+            {
+                "Description": "Indicates whether a user inside the network does not belong to the organization’s domain",
+                "Name": "IsExternalUser"
+            },
+            {
+                "Description": "Indicates whether the user that signed in is a guest in the tenant",
+                "Name": "IsGuestUser"
+            },
+            {
+                "Description": "On-premises user principal name (UPN) of the user signing in to Microsoft Entra ID",
+                "Name": "AlternateSignInName"
+            },
+            {
+                "Description": "Date and time when the user that signed in last changed their password",
+                "Name": "LastPasswordChangeTimestamp"
+            },
+            {
+                "Description": "Display name of the resource accessed. The display name can contain any character.",
+                "Name": "ResourceDisplayName"
+            },
+            {
+                "Description": "Unique identifier of the resource accessed",
+                "Name": "ResourceId"
+            },
+            {
+                "Description": "Unique identifier of the tenant of the resource accessed",
+                "Name": "ResourceTenantId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "Unique identifier for the device in Microsoft Entra ID",
+                "Name": "AadDeviceId"
+            },
+            {
+                "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+                "Name": "OSPlatform"
+            },
+            {
+                "Description": "Indicates the trust type of the device that signed in. For managed device scenarios only. Possible values are Workplace, AzureAd, and ServerAd.",
+                "Name": "DeviceTrustType"
+            },
+            {
+                "Description": "Indicates whether the endpoint has been onboarded to and is managed by Microsoft Defender for Endpoint",
+                "Name": "IsManaged"
+            },
+            {
+                "Description": "Indicates whether the device that initiated the event is compliant or not",
+                "Name": "IsCompliant"
+            },
+            {
+                "Description": "Details about the authentication processor",
+                "Name": "AuthenticationProcessingDetails"
+            },
+            {
+                "Description": "Type of authentication required for the sign-in. Possible values: multiFactorAuthentication (MFA was required) and singleFactorAuthentication (no MFA was required).",
+                "Name": "AuthenticationRequirement"
+            },
+            {
+                "Description": "Indicates if the token issuer is Microsoft Entra ID (0) or Active Directory Federation Services (1)",
+                "Name": "TokenIssuerType"
+            },
+            {
+                "Description": "Aggregated risk level during sign-in. Possible values: 0 (aggregated risk level not set), 1 (none), 10 (low), 50 (medium), or 100 (high).",
+                "Name": "RiskLevelAggregated"
+            },
+            {
+                "Description": "User risk level at sign-in",
+                "Name": "RiskLevelDuringSignIn"
+            },
+            {
+                "Description": "Array of risk event types applicable to the event",
+                "Name": "RiskEventTypes"
+            },
+            {
+                "Description": "Indicates risky user state. Possible values: 0 (none), 1 (confirmed safe), 2 (remediated), 3 (dismissed), 4 (at risk), or 5 (confirmed compromised).",
+                "Name": "RiskState"
+            },
+            {
+                "Description": "User agent information from the web browser or other client application",
+                "Name": "UserAgent"
+            },
+            {
+                "Description": "Indicates the client app used",
+                "Name": "ClientAppUsed"
+            },
+            {
+                "Description": "Details about the version of the browser used to sign in",
+                "Name": "Browser"
+            },
+            {
+                "Description": "Details of the conditional access policies applied to the sign-in event",
+                "Name": "ConditionalAccessPolicies"
+            },
+            {
+                "Description": "Status of the conditional access policies applied to the sign-in. Possible values are 0 (policies applied), 1 (attempt to apply policies failed), or 2 (policies not applied).",
+                "Name": "ConditionalAccessStatus"
+            },
+            {
+                "Description": "IP address assigned to the device during communication",
+                "Name": "IPAddress"
+            },
+            {
+                "Description": "Country/Region where the account user is located",
+                "Name": "Country"
+            },
+            {
+                "Description": "State where the sign-in occurred, if available",
+                "Name": "State"
+            },
+            {
+                "Description": "City where the client IP address is geolocated",
+                "Name": "City"
+            },
+            {
+                "Description": "The north to south coordinates of the sign-in location",
+                "Name": "Latitude"
+            },
+            {
+                "Description": "The east to west coordinates of the sign-in location",
+                "Name": "Longitude"
+            },
+            {
+                "Description": "Network location details of the authentication processor of the sign-in event",
+                "Name": "NetworkLocationDetails"
+            },
+            {
+                "Description": "Unique identifier of the request",
+                "Name": "RequestId"
+            },
+            {
+                "Description": "Unique identifier for the event",
+                "Name": "ReportId"
+            }
+        ],
+        "table": "AADSignInEventsBeta"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the behavior",
+                "Name": "BehaviorId"
+            },
+            {
+                "Description": "Type of behavior",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Description of behavior",
+                "Name": "Description"
+            },
+            {
+                "Description": "Type of threat indicator or breach activity identified by the behavior",
+                "Name": "Categories"
+            },
+            {
+                "Description": "MITRE ATT&CK techniques associated with the activity that triggered the behavior",
+                "Name": "AttackTechniques"
+            },
+            {
+                "Description": "Product or service that identified the behavior",
+                "Name": "ServiceSource"
+            },
+            {
+                "Description": "Detection technology or sensor that identified the notable component or activity",
+                "Name": "DetectionSource"
+            },
+            {
+                "Description": "Products or services that provided information for the behavior",
+                "Name": "DataSources"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "User principal name (UPN) of the account",
+                "Name": "AccountUpn"
+            },
+            {
+                "Description": "Unique identifier for the account in Microsoft Entra ID",
+                "Name": "AccountObjectId"
+            },
+            {
+                "Description": "Date and time of the first activity related to the behavior",
+                "Name": "StartTime"
+            },
+            {
+                "Description": "Date and time of the last activity related to the behavior",
+                "Name": "EndTime"
+            },
+            {
+                "Description": "Additional information about the behavior",
+                "Name": "AdditionalFields"
+            }
+        ],
+        "table": "BehaviorInfo"
+    },
+    {
+        "columns": [
+            {
+                "Description": "Date and time when the record was generated",
+                "Name": "Timestamp"
+            },
+            {
+                "Description": "Unique identifier for the behavior",
+                "Name": "BehaviorId"
+            },
+            {
+                "Description": "Type of behavior",
+                "Name": "ActionType"
+            },
+            {
+                "Description": "Type of threat indicator or breach activity identified by the behavior",
+                "Name": "Categories"
+            },
+            {
+                "Description": "Product or service that identified the behavior",
+                "Name": "ServiceSource"
+            },
+            {
+                "Description": "Detection technology or sensor that identified the notable component or activity",
+                "Name": "DetectionSource"
+            },
+            {
+                "Description": "Products or services that provided information for the behavior",
+                "Name": "DataSources"
+            },
+            {
+                "Description": "Type of object, such as a file, a process, a device, or a user",
+                "Name": "EntityType"
+            },
+            {
+                "Description": "Indicates whether the entity is impacted or merely related",
+                "Name": "EntityRole"
+            },
+            {
+                "Description": "The role of the entity in the behavior",
+                "Name": "DetailedEntityRole"
+            },
+            {
+                "Description": "Name of the file that the recorded action was applied to",
+                "Name": "FileName"
+            },
+            {
+                "Description": "Folder containing the file that the recorded action was applied to",
+                "Name": "FolderPath"
+            },
+            {
+                "Description": "SHA-1 hash of the file that the recorded action was applied to",
+                "Name": "SHA1"
+            },
+            {
+                "Description": "SHA-256 of the file that the recorded action was applied to",
+                "Name": "SHA256"
+            },
+            {
+                "Description": "Size of the file in bytes",
+                "Name": "FileSize"
+            },
+            {
+                "Description": "Malware family that the suspicious or malicious file or process has been classified under",
+                "Name": "ThreatFamily"
+            },
+            {
+                "Description": "IP address that was being connected to",
+                "Name": "RemoteIP"
+            },
+            {
+                "Description": "URL or fully qualified domain name (FQDN) that was being connected to",
+                "Name": "RemoteUrl"
+            },
+            {
+                "Description": "User name of the account",
+                "Name": "AccountName"
+            },
+            {
+                "Description": "Domain of the account",
+                "Name": "AccountDomain"
+            },
+            {
+                "Description": "Security Identifier (SID) of the account",
+                "Name": "AccountSid"
+            },
+            {
+                "Description": "Unique identifier for the account in Microsoft Entra ID",
+                "Name": "AccountObjectId"
+            },
+            {
+                "Description": "User principal name (UPN) of the account",
+                "Name": "AccountUpn"
+            },
+            {
+                "Description": "Unique identifier for the device in the service",
+                "Name": "DeviceId"
+            },
+            {
+                "Description": "Fully qualified domain name (FQDN) of the device",
+                "Name": "DeviceName"
+            },
+            {
+                "Description": "IP address assigned to the local machine used during communication",
+                "Name": "LocalIP"
+            },
+            {
+                "Description": "Unique identifier for the email, generated by Office 365",
+                "Name": "NetworkMessageId"
+            },
+            {
+                "Description": "Subject of the email",
+                "Name": "EmailSubject"
+            },
+            {
+                "Description": "Identifier for the group of similar emails clustered based on heuristic analysis of their contents",
+                "Name": "EmailClusterId"
+            },
+            {
+                "Description": "Application that performed the recorded action",
+                "Name": "Application"
+            },
+            {
+                "Description": "Unique identifier for the application ",
+                "Name": "ApplicationId"
+            },
+            {
+                "Description": "Unique identifier of the third-party OAuth application",
+                "Name": "OAuthApplicationId"
+            },
+            {
+                "Description": "Command line used to create the new process",
+                "Name": "ProcessCommandLine"
+            },
+            {
+                "Description": "Registry key that the recorded action was applied to",
+                "Name": "RegistryKey"
+            },
+            {
+                "Description": "Name of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueName"
+            },
+            {
+                "Description": "Data of the registry value that the recorded action was applied to",
+                "Name": "RegistryValueData"
+            },
+            {
+                "Description": "Additional information about the behavior",
+                "Name": "AdditionalFields"
+            }
+        ],
+        "table": "BehaviorEntities"
+    }
+]
