@@ -1,0 +1,49 @@
+{
+    "columns": [
+        {
+            "Description": "Unique edge id Unique identifier for the relationship/edge",
+            "Name": "EdgeId"
+        },
+        {
+            "Description": "Label of edge",
+            "Name": "EdgeLabel"
+        },
+        {
+            "Description": "Node ID of the edge's source",
+            "Name": "SourceNodeId"
+        },
+        {
+            "Description": "Display name of source node",
+            "Name": "SourceNodeName"
+        },
+        {
+            "Description": "Label of the edge source node",
+            "Name": "SourceNodeLabel"
+        },
+        {
+            "Description": "Categories of the source node",
+            "Name": "SourceNodeCategories"
+        },
+        {
+            "Description": "Node ID of the edge's target",
+            "Name": "TargetNodeId"
+        },
+        {
+            "Description": "Display name of target node",
+            "Name": "TargetNodeName"
+        },
+        {
+            "Description": "Label of the edge target node",
+            "Name": "TargetNodeLabel"
+        },
+        {
+            "Description": "Categories of the target node",
+            "Name": "TargetNodeCategories"
+        },
+        {
+            "Description": "Optional data relevant for the relationship between the nodes",
+            "Name": "EdgeProperties"
+        }
+    ],
+    "table": "ExposureGraphEdges"
+}

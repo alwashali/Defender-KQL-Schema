@@ -1,0 +1,77 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "SHA-1 hash of the file that the recorded action was applied to",
+            "Name": "SHA1"
+        },
+        {
+            "Description": "Indicates whether the file is signed",
+            "Name": "IsSigned"
+        },
+        {
+            "Description": "Indicates whether signature information was read as embedded content in the file itself or read from an external catalog file",
+            "Name": "SignatureType"
+        },
+        {
+            "Description": "Information about the signer of the file",
+            "Name": "Signer"
+        },
+        {
+            "Description": "Unique hash value identifying the signer",
+            "Name": "SignerHash"
+        },
+        {
+            "Description": "Information about the issuing certificate authority (CA)",
+            "Name": "Issuer"
+        },
+        {
+            "Description": "Unique hash value identifying issuing certificate authority (CA)",
+            "Name": "IssuerHash"
+        },
+        {
+            "Description": "Identifier for the certificate that is unique to the issuing certificate authority (CA)",
+            "Name": "CertificateSerialNumber"
+        },
+        {
+            "Description": "JSON array listing the URLs of network shares that contain certificates and certificate revocation lists (CRLs)",
+            "Name": "CrlDistributionPointUrls"
+        },
+        {
+            "Description": "Date and time the certificate was created",
+            "Name": "CertificateCreationTime"
+        },
+        {
+            "Description": "Date and time the certificate is set to expire",
+            "Name": "CertificateExpirationTime"
+        },
+        {
+            "Description": "Date and time the certificate was countersigned",
+            "Name": "CertificateCountersignatureTime"
+        },
+        {
+            "Description": "Indicates whether the file is trusted based on the results of the WinVerifyTrust function, which checks for unknown root certificate information, invalid signatures, revoked certificates, and other questionable attributes",
+            "Name": "IsTrusted"
+        },
+        {
+            "Description": "Indicates whether the signer of the root certificate is Microsoft",
+            "Name": "IsRootSignerMicrosoft"
+        },
+        {
+            "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+            "Name": "ReportId"
+        }
+    ],
+    "table": "DeviceFileCertificateInfo"
+}

@@ -1,0 +1,53 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "URL that was clicked",
+            "Name": "Url"
+        },
+        {
+            "Description": "Type of activity that triggered the event",
+            "Name": "ActionType"
+        },
+        {
+            "Description": "User principal name (UPN) of the account",
+            "Name": "AccountUpn"
+        },
+        {
+            "Description": "Information about the workload from which the URL originated from",
+            "Name": "Workload"
+        },
+        {
+            "Description": "Unique identifier for the email from which the URL was clicked",
+            "Name": "NetworkMessageId"
+        },
+        {
+            "Description": "Verdict on whether the URL leads to malware, phishing, or other threats",
+            "Name": "ThreatTypes"
+        },
+        {
+            "Description": "Methods used to detect whether the URL contains or leads to malware, phishing, or other threats",
+            "Name": "DetectionMethods"
+        },
+        {
+            "Description": "IP address assigned to the device during communication",
+            "Name": "IPAddress"
+        },
+        {
+            "Description": "Indicates whether the user was able to click through to the original URL or not",
+            "Name": "IsClickedThrough"
+        },
+        {
+            "Description": "List of URLs in the redirection chain",
+            "Name": "UrlChain"
+        },
+        {
+            "Description": "Unique identifier for the event",
+            "Name": "ReportId"
+        }
+    ],
+    "table": "UrlClickEvents"
+}

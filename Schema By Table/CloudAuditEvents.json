@@ -1,0 +1,77 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Cloud enviorment source of the cloud audit event. Cloud be Azure, AWS, GCP, AliCloud or other",
+            "Name": "AuditSource"
+        },
+        {
+            "Description": "Data source of the cloud audit event. Could be Azure ARM Logs, AWS CloudTrail, GCP Logging or other",
+            "Name": "DataSource"
+        },
+        {
+            "Description": "Type of activity that triggered the event",
+            "Name": "ActionType"
+        },
+        {
+            "Description": "Audit event operation name as appeared in the raw event columns. Usually includes both resource type and operation",
+            "Name": "OperationName"
+        },
+        {
+            "Description": "An identifier for the Azure cloud resource as found by Microsoft Defender for Cloud.",
+            "Name": "AzureResourceId"
+        },
+        {
+            "Description": "An identifier for the Aws cloud resource as found by Microsoft Defender for Cloud.",
+            "Name": "AwsResourceName"
+        },
+        {
+            "Description": "An identifier for the Google cloud resource as found by Microsoft Defender for Cloud.",
+            "Name": "GcpFullResourceName"
+        },
+        {
+            "Description": "An identifier for the account as found by Microsoft Defender for Cloud. Could be Microsoft Entra ID, user principal name, IaM role or other identifiers",
+            "Name": "Account"
+        },
+        {
+            "Description": "The client IP address used to access the cloud resource or control plane",
+            "Name": "IPAddress"
+        },
+        {
+            "Description": "Indicates whether the IP address belongs to a known anonymous proxy",
+            "Name": "IsAnonymousProxy"
+        },
+        {
+            "Description": "Two-letter code indicating the country where the client IP address is geolocated",
+            "Name": "CountryCode"
+        },
+        {
+            "Description": "City where the client IP address is geolocated",
+            "Name": "City"
+        },
+        {
+            "Description": "Internet service provider associated with  the IP address",
+            "Name": "ISP"
+        },
+        {
+            "Description": "User agent information from the web browser or other client application",
+            "Name": "UserAgent"
+        },
+        {
+            "Description": "Raw event information from the source application or service in JSON format",
+            "Name": "RawEventData"
+        },
+        {
+            "Description": "Additional information about the entity or event",
+            "Name": "AdditionalFields"
+        },
+        {
+            "Description": "Unique identifier for the event",
+            "Name": "ReportId"
+        }
+    ],
+    "table": "CloudAuditEvents"
+}

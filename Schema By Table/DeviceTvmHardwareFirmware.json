@@ -1,0 +1,37 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Type of hardware or firmware component",
+            "Name": "ComponentType"
+        },
+        {
+            "Description": "Manufacturer of hardware or firmware component",
+            "Name": "Manufacturer"
+        },
+        {
+            "Description": "Name of hardware or firmware component",
+            "Name": "ComponentName"
+        },
+        {
+            "Description": "Component family or class, a grouping of components that have similar features or characteristics as determined by the manufacturer",
+            "Name": "ComponentFamily"
+        },
+        {
+            "Description": "Component version (e.g., BIOS version)",
+            "Name": "ComponentVersion"
+        },
+        {
+            "Description": "Additional information about the entity or event",
+            "Name": "AdditionalFields"
+        }
+    ],
+    "table": "DeviceTvmHardwareFirmware"
+}

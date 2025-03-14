@@ -1,0 +1,29 @@
+{
+    "columns": [
+        {
+            "Description": "Unique node identifier",
+            "Name": "NodeId"
+        },
+        {
+            "Description": "Label of node",
+            "Name": "NodeLabel"
+        },
+        {
+            "Description": "Node display name",
+            "Name": "NodeName"
+        },
+        {
+            "Description": "Categories of the node",
+            "Name": "Categories"
+        },
+        {
+            "Description": "Properties of the node, including insights related to the resource, such as whether the resource is exposed to the internet, or vulnerable to remote code execution",
+            "Name": "NodeProperties"
+        },
+        {
+            "Description": "All known node identifiers",
+            "Name": "EntityIds"
+        }
+    ],
+    "table": "ExposureGraphNodes"
+}

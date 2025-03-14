@@ -1,0 +1,49 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+            "Name": "OSPlatform"
+        },
+        {
+            "Description": "Version of the operating system running on the machine",
+            "Name": "OSVersion"
+        },
+        {
+            "Description": "Architecture of the operating system running on the machine",
+            "Name": "OSArchitecture"
+        },
+        {
+            "Description": "Name of the software vendor",
+            "Name": "SoftwareVendor"
+        },
+        {
+            "Description": "Name of the software product",
+            "Name": "SoftwareName"
+        },
+        {
+            "Description": "Version number of the software product",
+            "Name": "SoftwareVersion"
+        },
+        {
+            "Description": "Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date",
+            "Name": "EndOfSupportStatus"
+        },
+        {
+            "Description": "End-of-support (EOS) or end-of-life (EOL) date of the software product",
+            "Name": "EndOfSupportDate"
+        },
+        {
+            "Description": "The standard Common Platform Enumeration (CPE) name of the software product version",
+            "Name": "ProductCodeCpe"
+        }
+    ],
+    "table": "DeviceTvmSoftwareInventory"
+}

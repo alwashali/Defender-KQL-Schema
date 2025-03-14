@@ -1,0 +1,53 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+            "Name": "OSPlatform"
+        },
+        {
+            "Description": "Version of the operating system running on the machine",
+            "Name": "OSVersion"
+        },
+        {
+            "Description": "Unique identifier for a specific configuration",
+            "Name": "ConfigurationId"
+        },
+        {
+            "Description": "Unique identifier for the profile",
+            "Name": "ProfileId"
+        },
+        {
+            "Description": "Indicates whether the device that initiated the event is compliant or not",
+            "Name": "IsCompliant"
+        },
+        {
+            "Description": "Indicates whether the configuration or policy is applicable",
+            "Name": "IsApplicable"
+        },
+        {
+            "Description": "The registry path or other location used to determine the current device setting",
+            "Name": "Source"
+        },
+        {
+            "Description": "Set of expected values for the current device setting to be complaint",
+            "Name": "RecommendedValue"
+        },
+        {
+            "Description": "Set of detected values found on the device",
+            "Name": "CurrentValue"
+        },
+        {
+            "Description": "Indicates whether the device is exempt from having the baseline configuration",
+            "Name": "IsExempt"
+        }
+    ],
+    "table": "DeviceBaselineComplianceAssessment"
+}

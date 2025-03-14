@@ -1,0 +1,29 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Date and time when the service last saw the device",
+            "Name": "LastSeenTime"
+        },
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+            "Name": "OSPlatform"
+        },
+        {
+            "Description": "Additional information about the entity or event",
+            "Name": "AdditionalFields"
+        }
+    ],
+    "table": "DeviceTvmInfoGathering"
+}

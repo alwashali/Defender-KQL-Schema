@@ -1,0 +1,49 @@
+{
+    "columns": [
+        {
+            "Description": "Name of the web browser with the extension",
+            "Name": "BrowserName"
+        },
+        {
+            "Description": "Unique identifier for the browser extension",
+            "Name": "ExtensionId"
+        },
+        {
+            "Description": "Name of the extension",
+            "Name": "ExtensionName"
+        },
+        {
+            "Description": "Description from the publisher about the extension",
+            "Name": "ExtensionDescription"
+        },
+        {
+            "Description": "Version number of the extension",
+            "Name": "ExtensionVersion"
+        },
+        {
+            "Description": "Risk level for the extension based on the permissions it has requested",
+            "Name": "ExtensionRisk"
+        },
+        {
+            "Description": "Unique identifier for the permission",
+            "Name": "PermissionId"
+        },
+        {
+            "Description": "Name given to each permission based on what the extension is asking for",
+            "Name": "PermissionName"
+        },
+        {
+            "Description": "Explanation of what the permission is supposed to do",
+            "Name": "PermissionDescription"
+        },
+        {
+            "Description": "Risk level for the permission based on the type of access it would allow",
+            "Name": "PermissionRisk"
+        },
+        {
+            "Description": "Whether the permission is required for the extension to run, or optional",
+            "Name": "IsPermissionRequired"
+        }
+    ],
+    "table": "DeviceTvmBrowserExtensionsKB"
+}

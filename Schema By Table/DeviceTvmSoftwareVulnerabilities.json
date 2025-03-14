@@ -1,0 +1,61 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+            "Name": "OSPlatform"
+        },
+        {
+            "Description": "Version of the operating system running on the machine",
+            "Name": "OSVersion"
+        },
+        {
+            "Description": "Architecture of the operating system running on the machine",
+            "Name": "OSArchitecture"
+        },
+        {
+            "Description": "Name of the software vendor",
+            "Name": "SoftwareVendor"
+        },
+        {
+            "Description": "Name of the software product",
+            "Name": "SoftwareName"
+        },
+        {
+            "Description": "Version number of the software product",
+            "Name": "SoftwareVersion"
+        },
+        {
+            "Description": "Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system",
+            "Name": "CveId"
+        },
+        {
+            "Description": "Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape",
+            "Name": "VulnerabilitySeverityLevel"
+        },
+        {
+            "Description": "Name or description of the security update provided by the software vendor to address the vulnerability",
+            "Name": "RecommendedSecurityUpdate"
+        },
+        {
+            "Description": "Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles",
+            "Name": "RecommendedSecurityUpdateId"
+        },
+        {
+            "Description": "Array of tags relevant to the CVE; example: ZeroDay, NoSecurityUpdate",
+            "Name": "CveTags"
+        },
+        {
+            "Description": "Indicates the status of the workaround mitigation for the CVE on this device (possible values: applied, not applied, partially applied, pending reboot)",
+            "Name": "CveMitigationStatus"
+        }
+    ],
+    "table": "DeviceTvmSoftwareVulnerabilities"
+}

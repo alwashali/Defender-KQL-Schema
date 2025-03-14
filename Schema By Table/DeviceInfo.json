@@ -1,0 +1,197 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Version of the endpoint agent or sensor running on the machine",
+            "Name": "ClientVersion"
+        },
+        {
+            "Description": "Public IP address used by the onboarded machine to connect to the Windows Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy",
+            "Name": "PublicIP"
+        },
+        {
+            "Description": "Architecture of the operating system running on the machine",
+            "Name": "OSArchitecture"
+        },
+        {
+            "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+            "Name": "OSPlatform"
+        },
+        {
+            "Description": "Build version of the operating system running on the machine",
+            "Name": "OSBuild"
+        },
+        {
+            "Description": "Boolean indicator of whether machine is joined to the Microsoft Entra ID",
+            "Name": "IsAzureADJoined"
+        },
+        {
+            "Description": "The device's Microsoft Entra ID join type",
+            "Name": "JoinType"
+        },
+        {
+            "Description": "Unique identifier for the device in Microsoft Entra ID",
+            "Name": "AadDeviceId"
+        },
+        {
+            "Description": "List of all users that are logged on the machine at the time of the event in JSON array format",
+            "Name": "LoggedOnUsers"
+        },
+        {
+            "Description": "Device tag added through the registry",
+            "Name": "RegistryDeviceTag"
+        },
+        {
+            "Description": "Version of the operating system running on the machine",
+            "Name": "OSVersion"
+        },
+        {
+            "Description": "Machine group of the machine. This group is used by role-based access control to determine access to the machine",
+            "Name": "MachineGroup"
+        },
+        {
+            "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+            "Name": "ReportId"
+        },
+        {
+            "Description": "Indicates whether the device is currently onboarded or not to Microsoft Defender For Endpoint or if the device is not supported",
+            "Name": "OnboardingStatus"
+        },
+        {
+            "Description": "Additional information about the entity or event",
+            "Name": "AdditionalFields"
+        },
+        {
+            "Description": "Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown",
+            "Name": "DeviceCategory"
+        },
+        {
+            "Description": "Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer",
+            "Name": "DeviceType"
+        },
+        {
+            "Description": "Additional modifier for certain types of devices; for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute",
+            "Name": "DeviceSubtype"
+        },
+        {
+            "Description": "Model name or number of the product from the vendor or manufacturer; only available if device discovery finds enough information about this attribute",
+            "Name": "Model"
+        },
+        {
+            "Description": "Name of the product vendor or manufacturer; only available if device discovery finds enough information about this attribute",
+            "Name": "Vendor"
+        },
+        {
+            "Description": "Distribution of the OS platform, such as Ubuntu or RedHat for Linux platforms",
+            "Name": "OSDistribution"
+        },
+        {
+            "Description": "Additional information about the OS version, such as the popular name, code name, or version number",
+            "Name": "OSVersionInfo"
+        },
+        {
+            "Description": "Previous device IDs that have been assigned to the same device.",
+            "Name": "MergedDeviceIds"
+        },
+        {
+            "Description": "The most recent device ID assigned to a device ",
+            "Name": "MergedToDeviceId"
+        },
+        {
+            "Description": "Indicates whether the device is internet-facing",
+            "Name": "IsInternetFacing"
+        },
+        {
+            "Description": "Indicates health of the device\u2019s EDR sensor, if onboarded to Microsoft Defender For Endpoint",
+            "Name": "SensorHealthState"
+        },
+        {
+            "Description": "Determines if the device is excluded from different views and reports in the portal",
+            "Name": "IsExcluded"
+        },
+        {
+            "Description": "The reason for the device being excluded",
+            "Name": "ExclusionReason"
+        },
+        {
+            "Description": "The device's level of vulnerability to exploitation based on its exposure score; can be: Low, Medium, High",
+            "Name": "ExposureLevel"
+        },
+        {
+            "Description": "Priority or value assigned to the device in relation to its importance in computing the organization's exposure score; can be: Low, Normal (Default), High",
+            "Name": "AssetValue"
+        },
+        {
+            "Description": "Device tags created manually using the portal UI or public API",
+            "Name": "DeviceManualTags"
+        },
+        {
+            "Description": "Device tags added and removed dynamically based on dynamic rules",
+            "Name": "DeviceDynamicTags"
+        },
+        {
+            "Description": "Universally Unique Identifier (UUID) of the device\u2019s hardware",
+            "Name": "HardwareUuid"
+        },
+        {
+            "Description": "The cloud platforms that the device belongs to\u2014can be Azure, Amazon Web Services, Google Cloud Platform and Azure Arc",
+            "Name": "CloudPlatforms"
+        },
+        {
+            "Description": "Unique identifier assigned to the device in Azure",
+            "Name": "AzureVmId"
+        },
+        {
+            "Description": "Unique identifier of the Azure resource associated with the device.",
+            "Name": "AzureResourceId"
+        },
+        {
+            "Description": "Unique identifier of the Azure subscription associated with the device",
+            "Name": "AzureVmSubscriptionId"
+        },
+        {
+            "Description": "Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID",
+            "Name": "GcpFullResourceName"
+        },
+        {
+            "Description": "Unique identifier specific to Amazon Web Services devices, containing the Amazon Resource Name",
+            "Name": "AwsResourceName"
+        },
+        {
+            "Description": "Indicates whether this device is classified as short-lived or transient based on the frequency of appearance of the device on the network",
+            "Name": "IsTransient"
+        },
+        {
+            "Description": "Build revision number of the operating system running on the machine",
+            "Name": "OsBuildRevision"
+        },
+        {
+            "Description": "Device ID of the device running Windows Subsystem for Linux",
+            "Name": "HostDeviceId"
+        },
+        {
+            "Description": "Indicates the mitigation action applied to a device",
+            "Name": "MitigationStatus"
+        },
+        {
+            "Description": "Type of connectivity from the device to the cloud",
+            "Name": "ConnectivityType"
+        },
+        {
+            "Description": "Products or services that have seen or reported the device, including when they last reported it",
+            "Name": "DiscoverySources"
+        }
+    ],
+    "table": "DeviceInfo"
+}

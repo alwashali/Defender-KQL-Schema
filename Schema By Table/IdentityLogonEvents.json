@@ -1,0 +1,117 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Type of activity that triggered the event",
+            "Name": "ActionType"
+        },
+        {
+            "Description": "Application that performed the recorded action",
+            "Name": "Application"
+        },
+        {
+            "Description": "Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service",
+            "Name": "LogonType"
+        },
+        {
+            "Description": "Protocol used during the communication",
+            "Name": "Protocol"
+        },
+        {
+            "Description": "Information explaining why the recorded action failed",
+            "Name": "FailureReason"
+        },
+        {
+            "Description": "User name of the account",
+            "Name": "AccountName"
+        },
+        {
+            "Description": "Domain of the account",
+            "Name": "AccountDomain"
+        },
+        {
+            "Description": "User principal name (UPN) of the account",
+            "Name": "AccountUpn"
+        },
+        {
+            "Description": "Security Identifier (SID) of the account",
+            "Name": "AccountSid"
+        },
+        {
+            "Description": "Unique identifier for the account in Microsoft Entra ID",
+            "Name": "AccountObjectId"
+        },
+        {
+            "Description": "Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.",
+            "Name": "AccountDisplayName"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer",
+            "Name": "DeviceType"
+        },
+        {
+            "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+            "Name": "OSPlatform"
+        },
+        {
+            "Description": "IP address assigned to the device during communication",
+            "Name": "IPAddress"
+        },
+        {
+            "Description": "TCP port used during communication",
+            "Name": "Port"
+        },
+        {
+            "Description": "Name of the device running the server application that processed the recorded action",
+            "Name": "DestinationDeviceName"
+        },
+        {
+            "Description": "IP address of the device running the server application that processed the recorded action",
+            "Name": "DestinationIPAddress"
+        },
+        {
+            "Description": "Destination port of the activity",
+            "Name": "DestinationPort"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device that the recorded action was applied to",
+            "Name": "TargetDeviceName"
+        },
+        {
+            "Description": "Display name of the account that the recorded action was applied to",
+            "Name": "TargetAccountDisplayName"
+        },
+        {
+            "Description": "City, country, or other geographic location associated with the event",
+            "Name": "Location"
+        },
+        {
+            "Description": "Internet service provider associated with  the IP address",
+            "Name": "ISP"
+        },
+        {
+            "Description": "Unique identifier for the event",
+            "Name": "ReportId"
+        },
+        {
+            "Description": "Additional information about the entity or event",
+            "Name": "AdditionalFields"
+        },
+        {
+            "Description": "List of features observed to be statistically uncommon for the user that performed the activity",
+            "Name": "UncommonForUser"
+        },
+        {
+            "Description": "Number of days since each statistical feature for the user was last seen",
+            "Name": "LastSeenForUser"
+        }
+    ],
+    "table": "IdentityLogonEvents"
+}

@@ -1,0 +1,105 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Unique identifier of the Azure resource associated with the process",
+            "Name": "AzureResourceId"
+        },
+        {
+            "Description": "Unique identifier specific to Amazon Web Services devices, containing the Amazon resource name",
+            "Name": "AwsResourceName"
+        },
+        {
+            "Description": "Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID for GCP",
+            "Name": "GcpFullResourceName"
+        },
+        {
+            "Description": "The container image name or ID, if it exists",
+            "Name": "ContainerImageName"
+        },
+        {
+            "Description": "The Kubernetes namespace name",
+            "Name": "KubernetesNamespace"
+        },
+        {
+            "Description": "The Kubernetes pod name",
+            "Name": "KubernetesPodName"
+        },
+        {
+            "Description": "Unique identifier for the Kubernetes resource that includes the namespace, resource type and name",
+            "Name": "KubernetesResource"
+        },
+        {
+            "Description": "Name of the container in Kubernetes or another runtime environment",
+            "Name": "ContainerName"
+        },
+        {
+            "Description": "The container identifier in Kubernetes or another runtime environment",
+            "Name": "ContainerId"
+        },
+        {
+            "Description": "Type of activity that triggered the event",
+            "Name": "ActionType"
+        },
+        {
+            "Description": "Name of the file that the recorded action was applied to",
+            "Name": "FileName"
+        },
+        {
+            "Description": "Folder containing the file that the recorded action was applied to",
+            "Name": "FolderPath"
+        },
+        {
+            "Description": "Process ID (PID) of the newly created process",
+            "Name": "ProcessId"
+        },
+        {
+            "Description": "The name of the process",
+            "Name": "ProcessName"
+        },
+        {
+            "Description": "The name of the parent process",
+            "Name": "ParentProcessName"
+        },
+        {
+            "Description": "The process ID (PID) of the parent process",
+            "Name": "ParentProcessId"
+        },
+        {
+            "Description": "Command line used to create the new process",
+            "Name": "ProcessCommandLine"
+        },
+        {
+            "Description": "Date and time the process was created",
+            "Name": "ProcessCreationTime"
+        },
+        {
+            "Description": "Current working directory of the running process",
+            "Name": "ProcessCurrentWorkingDirectory"
+        },
+        {
+            "Description": "User name of the account",
+            "Name": "AccountName"
+        },
+        {
+            "Description": "Identifier for a logon session. This identifier is unique on the same machine only between restarts",
+            "Name": "LogonId"
+        },
+        {
+            "Description": "Process ID (PID) of the process that initiated the event",
+            "Name": "InitiatingProcessId"
+        },
+        {
+            "Description": "Additional information about the entity or event",
+            "Name": "AdditionalFields"
+        },
+        {
+            "Description": "Unique identifier for the event",
+            "Name": "ReportId"
+        }
+    ],
+    "table": "CloudProcessEvents"
+}

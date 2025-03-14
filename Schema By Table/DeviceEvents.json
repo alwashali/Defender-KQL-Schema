@@ -1,0 +1,265 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Type of activity that triggered the event",
+            "Name": "ActionType"
+        },
+        {
+            "Description": "Name of the file that the recorded action was applied to",
+            "Name": "FileName"
+        },
+        {
+            "Description": "Folder containing the file that the recorded action was applied to",
+            "Name": "FolderPath"
+        },
+        {
+            "Description": "SHA-1 hash of the file that the recorded action was applied to",
+            "Name": "SHA1"
+        },
+        {
+            "Description": "SHA-256 of the file that the recorded action was applied to",
+            "Name": "SHA256"
+        },
+        {
+            "Description": "MD5 hash of the file that the recorded action was applied to",
+            "Name": "MD5"
+        },
+        {
+            "Description": "Size of the file in bytes",
+            "Name": "FileSize"
+        },
+        {
+            "Description": "Domain of the account",
+            "Name": "AccountDomain"
+        },
+        {
+            "Description": "User name of the account",
+            "Name": "AccountName"
+        },
+        {
+            "Description": "Security Identifier (SID) of the account",
+            "Name": "AccountSid"
+        },
+        {
+            "Description": "URL or fully qualified domain name (FQDN) that was being connected to",
+            "Name": "RemoteUrl"
+        },
+        {
+            "Description": "Name of the device that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information.",
+            "Name": "RemoteDeviceName"
+        },
+        {
+            "Description": "Process ID (PID) of the newly created process",
+            "Name": "ProcessId"
+        },
+        {
+            "Description": "Command line used to create the new process",
+            "Name": "ProcessCommandLine"
+        },
+        {
+            "Description": "Date and time the process was created",
+            "Name": "ProcessCreationTime"
+        },
+        {
+            "Description": "Indicates the type of token elevation applied to the newly created process. Possible values: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (standard), and TokenElevationTypeFull (elevated)",
+            "Name": "ProcessTokenElevation"
+        },
+        {
+            "Description": "Identifier for a logon session. This identifier is unique on the same machine only between restarts",
+            "Name": "LogonId"
+        },
+        {
+            "Description": "Registry key that the recorded action was applied to",
+            "Name": "RegistryKey"
+        },
+        {
+            "Description": "Name of the registry value that the recorded action was applied to",
+            "Name": "RegistryValueName"
+        },
+        {
+            "Description": "Data of the registry value that the recorded action was applied to",
+            "Name": "RegistryValueData"
+        },
+        {
+            "Description": "IP address that was being connected to",
+            "Name": "RemoteIP"
+        },
+        {
+            "Description": "TCP port on the remote device that was being connected to",
+            "Name": "RemotePort"
+        },
+        {
+            "Description": "IP address assigned to the local machine used during communication",
+            "Name": "LocalIP"
+        },
+        {
+            "Description": "TCP port on the local machine used during communication",
+            "Name": "LocalPort"
+        },
+        {
+            "Description": "URL where the file was downloaded from",
+            "Name": "FileOriginUrl"
+        },
+        {
+            "Description": "IP address where the file was downloaded from",
+            "Name": "FileOriginIP"
+        },
+        {
+            "Description": "SHA-1 hash of the process (image file) that initiated the event",
+            "Name": "InitiatingProcessSHA1"
+        },
+        {
+            "Description": "SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.",
+            "Name": "InitiatingProcessSHA256"
+        },
+        {
+            "Description": "MD5 hash of the process (image file) that initiated the event",
+            "Name": "InitiatingProcessMD5"
+        },
+        {
+            "Description": "Name of the process file that initiated the event; if unavailable, the name of the process that initiated the event might be shown instead",
+            "Name": "InitiatingProcessFileName"
+        },
+        {
+            "Description": "Size of the process (image file) that initiated the event",
+            "Name": "InitiatingProcessFileSize"
+        },
+        {
+            "Description": "Folder containing the process (image file) that initiated the event",
+            "Name": "InitiatingProcessFolderPath"
+        },
+        {
+            "Description": "Process ID (PID) of the process that initiated the event",
+            "Name": "InitiatingProcessId"
+        },
+        {
+            "Description": "Command line used to run the process that initiated the event",
+            "Name": "InitiatingProcessCommandLine"
+        },
+        {
+            "Description": "Date and time when the process that initiated the event was started",
+            "Name": "InitiatingProcessCreationTime"
+        },
+        {
+            "Description": "Domain of the account that ran the process responsible for the event",
+            "Name": "InitiatingProcessAccountDomain"
+        },
+        {
+            "Description": "User name of the account that ran the process responsible for the event",
+            "Name": "InitiatingProcessAccountName"
+        },
+        {
+            "Description": "Security Identifier (SID) of the account that ran the process responsible for the event",
+            "Name": "InitiatingProcessAccountSid"
+        },
+        {
+            "Description": "User principal name (UPN) of the account that ran the process responsible for the event",
+            "Name": "InitiatingProcessAccountUpn"
+        },
+        {
+            "Description": "Microsoft Entra object ID of the user account that ran the process responsible for the event",
+            "Name": "InitiatingProcessAccountObjectId"
+        },
+        {
+            "Description": "Company name from the version information of the process (image file) responsible for the event",
+            "Name": "InitiatingProcessVersionInfoCompanyName"
+        },
+        {
+            "Description": "Product name from the version information of the process (image file) responsible for the event",
+            "Name": "InitiatingProcessVersionInfoProductName"
+        },
+        {
+            "Description": "Product version from the version information of the process (image file) responsible for the event",
+            "Name": "InitiatingProcessVersionInfoProductVersion"
+        },
+        {
+            "Description": "Internal file name from the version information of the process (image file) responsible for the event",
+            "Name": "InitiatingProcessVersionInfoInternalFileName"
+        },
+        {
+            "Description": "Original file name from the version information of the process (image file) responsible for the event",
+            "Name": "InitiatingProcessVersionInfoOriginalFileName"
+        },
+        {
+            "Description": "Description from the version information of the process (image file) responsible for the event",
+            "Name": "InitiatingProcessVersionInfoFileDescription"
+        },
+        {
+            "Description": "Process ID (PID) of the parent process that spawned the process responsible for the event",
+            "Name": "InitiatingProcessParentId"
+        },
+        {
+            "Description": "Name of the parent process that spawned the process responsible for the event",
+            "Name": "InitiatingProcessParentFileName"
+        },
+        {
+            "Description": "Date and time when the parent of the process responsible for the event was started",
+            "Name": "InitiatingProcessParentCreationTime"
+        },
+        {
+            "Description": "Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts.",
+            "Name": "InitiatingProcessLogonId"
+        },
+        {
+            "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+            "Name": "ReportId"
+        },
+        {
+            "Description": "Identifier for the virtualized container used by Application Guard to isolate browser activity",
+            "Name": "AppGuardContainerId"
+        },
+        {
+            "Description": "Additional information about the entity or event",
+            "Name": "AdditionalFields"
+        },
+        {
+            "Description": "Windows session ID of the initiating process",
+            "Name": "InitiatingProcessSessionId"
+        },
+        {
+            "Description": "Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+            "Name": "IsInitiatingProcessRemoteSession"
+        },
+        {
+            "Description": "Device name of the remote device from which the initiating process\u2019s RDP session was initiated",
+            "Name": "InitiatingProcessRemoteSessionDeviceName"
+        },
+        {
+            "Description": "IP address of the remote device from which the initiating process\u2019s RDP session was initiated",
+            "Name": "InitiatingProcessRemoteSessionIP"
+        },
+        {
+            "Description": "Windows session ID of the created process",
+            "Name": "CreatedProcessSessionId"
+        },
+        {
+            "Description": "Indicates whether the created process was run under a remote desktop protocol (RDP) session (true) or locally (false)",
+            "Name": "IsProcessRemoteSession"
+        },
+        {
+            "Description": "Device name of the remote device from which the created process\u2019s RDP session was initiated",
+            "Name": "ProcessRemoteSessionDeviceName"
+        },
+        {
+            "Description": "IP address of the remote device from which the created process\u2019s RDP session was initiated",
+            "Name": "ProcessRemoteSessionIP"
+        },
+        {
+            "Description": "Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices",
+            "Name": "InitiatingProcessUniqueId"
+        }
+    ],
+    "table": "DeviceEvents"
+}

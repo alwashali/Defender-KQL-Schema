@@ -1,0 +1,65 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Unique identifier for the behavior",
+            "Name": "BehaviorId"
+        },
+        {
+            "Description": "Type of behavior",
+            "Name": "ActionType"
+        },
+        {
+            "Description": "Description of behavior",
+            "Name": "Description"
+        },
+        {
+            "Description": "Type of threat indicator or breach activity identified by the behavior",
+            "Name": "Categories"
+        },
+        {
+            "Description": "MITRE ATT&CK techniques associated with the activity that triggered the behavior",
+            "Name": "AttackTechniques"
+        },
+        {
+            "Description": "Product or service that identified the behavior",
+            "Name": "ServiceSource"
+        },
+        {
+            "Description": "Detection technology or sensor that identified the notable component or activity",
+            "Name": "DetectionSource"
+        },
+        {
+            "Description": "Products or services that provided information for the behavior",
+            "Name": "DataSources"
+        },
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "User principal name (UPN) of the account",
+            "Name": "AccountUpn"
+        },
+        {
+            "Description": "Unique identifier for the account in Microsoft Entra ID",
+            "Name": "AccountObjectId"
+        },
+        {
+            "Description": "Date and time of the first activity related to the behavior",
+            "Name": "StartTime"
+        },
+        {
+            "Description": "Date and time of the last activity related to the behavior",
+            "Name": "EndTime"
+        },
+        {
+            "Description": "Additional information about the behavior",
+            "Name": "AdditionalFields"
+        }
+    ],
+    "table": "BehaviorInfo"
+}

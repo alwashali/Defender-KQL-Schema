@@ -1,0 +1,61 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Unique identifier for the certificate",
+            "Name": "Thumbprint"
+        },
+        {
+            "Description": "The location of the certificate",
+            "Name": "Path"
+        },
+        {
+            "Description": "Unique identifier for the certificate within a certificate authority's systems",
+            "Name": "SerialNumber"
+        },
+        {
+            "Description": "Entity that a certificate belongs to; can be a device, an individual, or an organization",
+            "Name": "IssuedTo"
+        },
+        {
+            "Description": "Entity that verified the information and signed the certificate",
+            "Name": "IssuedBy"
+        },
+        {
+            "Description": "Easy-to-understand version of a certificate's title",
+            "Name": "FriendlyName"
+        },
+        {
+            "Description": "Hashing algorithm and encryption algorithm used",
+            "Name": "SignatureAlgorithm"
+        },
+        {
+            "Description": "Size of the key used in the signature algorithm",
+            "Name": "KeySize"
+        },
+        {
+            "Description": "The date and time beyond which the certificate is no longer valid",
+            "Name": "ExpirationDate"
+        },
+        {
+            "Description": "The earliest date and time when the certificate became valid",
+            "Name": "IssueDate"
+        },
+        {
+            "Description": "Indicates if the holder of the certificate is a CA or end entity",
+            "Name": "SubjectType"
+        },
+        {
+            "Description": "The valid cryptographic uses of the certificate's public key",
+            "Name": "KeyUsage"
+        },
+        {
+            "Description": "Other valid uses for the certificate",
+            "Name": "ExtendedKeyUsage"
+        }
+    ],
+    "table": "DeviceTvmCertificateInfo"
+}

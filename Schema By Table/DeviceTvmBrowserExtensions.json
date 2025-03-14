@@ -1,0 +1,45 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Name of the web browser with the extension",
+            "Name": "BrowserName"
+        },
+        {
+            "Description": "Unique identifier for the browser extension",
+            "Name": "ExtensionId"
+        },
+        {
+            "Description": "Name of the extension",
+            "Name": "ExtensionName"
+        },
+        {
+            "Description": "Description from the publisher about the extension",
+            "Name": "ExtensionDescription"
+        },
+        {
+            "Description": "Version number of the extension",
+            "Name": "ExtensionVersion"
+        },
+        {
+            "Description": "Risk level for the extension based on the permissions it has requested",
+            "Name": "ExtensionRisk"
+        },
+        {
+            "Description": "Name of the vendor offering the extension",
+            "Name": "ExtensionVendor"
+        },
+        {
+            "Description": "Whether the extension is turned on or off on the devices",
+            "Name": "IsActivated"
+        },
+        {
+            "Description": "Date and time when the browser extension was first installed",
+            "Name": "InstallationTime"
+        }
+    ],
+    "table": "DeviceTvmBrowserExtensions"
+}

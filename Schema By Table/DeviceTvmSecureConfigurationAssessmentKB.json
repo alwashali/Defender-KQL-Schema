@@ -1,0 +1,45 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for a specific configuration",
+            "Name": "ConfigurationId"
+        },
+        {
+            "Description": "Rated impact of the configuration to the overall configuration score (1-10)",
+            "Name": "ConfigurationImpact"
+        },
+        {
+            "Description": "Display name of the configuration",
+            "Name": "ConfigurationName"
+        },
+        {
+            "Description": "Description of the configuration",
+            "Name": "ConfigurationDescription"
+        },
+        {
+            "Description": "Description of any associated risks",
+            "Name": "RiskDescription"
+        },
+        {
+            "Description": "Category or grouping to which the configuration belongs",
+            "Name": "ConfigurationCategory"
+        },
+        {
+            "Description": "Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.",
+            "Name": "ConfigurationSubcategory"
+        },
+        {
+            "Description": "List of industry benchmarks recommending the same or similar configuration",
+            "Name": "ConfigurationBenchmarks"
+        },
+        {
+            "Description": "Labels representing various attributes used to identify or categorize a security configuration",
+            "Name": "Tags"
+        },
+        {
+            "Description": "Recommended actions to reduce or address any associated risks",
+            "Name": "RemediationOptions"
+        }
+    ],
+    "table": "DeviceTvmSecureConfigurationAssessmentKB"
+}

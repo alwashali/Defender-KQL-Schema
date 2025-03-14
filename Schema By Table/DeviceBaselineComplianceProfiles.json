@@ -1,0 +1,57 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the profile",
+            "Name": "ProfileId"
+        },
+        {
+            "Description": "Display name of the profile",
+            "Name": "ProfileName"
+        },
+        {
+            "Description": "Optional description providing additional information related to the profile",
+            "Name": "ProfileDescription"
+        },
+        {
+            "Description": "Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7",
+            "Name": "OSPlatform"
+        },
+        {
+            "Description": "Version of the operating system running on the machine",
+            "Name": "OSVersion"
+        },
+        {
+            "Description": "Industry benchmark on top of which the profile was created",
+            "Name": "BaseBenchmark"
+        },
+        {
+            "Description": "Version of the industry benchmark on top of which the profile was created",
+            "Name": "BenchmarkVersion"
+        },
+        {
+            "Description": "Benchmark compliance level set for the profile",
+            "Name": "BenchmarkProfileLevel"
+        },
+        {
+            "Description": "Indicator of the profile status - can be Enabled or Disabled",
+            "Name": "Status"
+        },
+        {
+            "Description": "Identity of the user account who created the profile",
+            "Name": "CreatedBy"
+        },
+        {
+            "Description": "Date and time when the profile was created",
+            "Name": "CreatedOn"
+        },
+        {
+            "Description": "Identity of the user account who last updated the profile",
+            "Name": "LastUpdatedBy"
+        },
+        {
+            "Description": "Date and time when the profile was last updated",
+            "Name": "LastUpdatedOn"
+        }
+    ],
+    "table": "DeviceBaselineComplianceProfiles"
+}

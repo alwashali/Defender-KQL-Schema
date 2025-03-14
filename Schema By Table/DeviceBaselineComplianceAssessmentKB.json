@@ -1,0 +1,49 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for a specific configuration",
+            "Name": "ConfigurationId"
+        },
+        {
+            "Description": "Display name of the configuration",
+            "Name": "ConfigurationName"
+        },
+        {
+            "Description": "Description of the configuration",
+            "Name": "ConfigurationDescription"
+        },
+        {
+            "Description": "Description of any associated risks and rationale behind the configuration",
+            "Name": "ConfigurationRationale"
+        },
+        {
+            "Description": "Category or grouping to which the configuration belongs",
+            "Name": "ConfigurationCategory"
+        },
+        {
+            "Description": "List of benchmark compliance levels for which the configuration is applicable",
+            "Name": "BenchmarkProfileLevels"
+        },
+        {
+            "Description": "Unique Common Configuration Enumeration (CCE) identifier for the configuration",
+            "Name": "CCEReference"
+        },
+        {
+            "Description": "Recommended actions to reduce or address any associated risks",
+            "Name": "RemediationOptions"
+        },
+        {
+            "Description": "Industry benchmark recommending the configuration",
+            "Name": "ConfigurationBenchmark"
+        },
+        {
+            "Description": "The registry path or other location used to determine the current device setting",
+            "Name": "Source"
+        },
+        {
+            "Description": "Set of expected values for the current device setting to be complaint",
+            "Name": "RecommendedValue"
+        }
+    ],
+    "table": "DeviceBaselineComplianceAssessmentKB"
+}

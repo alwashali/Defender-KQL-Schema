@@ -1,0 +1,81 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Application that performed the recorded action",
+            "Name": "Application"
+        },
+        {
+            "Description": "Unique identifier for the application ",
+            "Name": "ApplicationId"
+        },
+        {
+            "Description": "Indicates whether the sign-in was initiated by a managed identity",
+            "Name": "IsManagedIdentity"
+        },
+        {
+            "Description": "Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit https://aka.ms/AADsigninsErrorCodes",
+            "Name": "ErrorCode"
+        },
+        {
+            "Description": "Unique identifier of the sign-in event",
+            "Name": "CorrelationId"
+        },
+        {
+            "Description": "Name of the service principal that initiated the sign-in",
+            "Name": "ServicePrincipalName"
+        },
+        {
+            "Description": "Unique identifier of the service principal that initiated the sign-in",
+            "Name": "ServicePrincipalId"
+        },
+        {
+            "Description": "Display name of the resource accessed. The display name can contain any character.",
+            "Name": "ResourceDisplayName"
+        },
+        {
+            "Description": "Unique identifier of the resource accessed",
+            "Name": "ResourceId"
+        },
+        {
+            "Description": "Unique identifier of the tenant of the resource accessed",
+            "Name": "ResourceTenantId"
+        },
+        {
+            "Description": "IP address assigned to the device during communication",
+            "Name": "IPAddress"
+        },
+        {
+            "Description": "Country/Region where the account user is located",
+            "Name": "Country"
+        },
+        {
+            "Description": "State where the sign-in occurred, if available",
+            "Name": "State"
+        },
+        {
+            "Description": "City where the client IP address is geolocated",
+            "Name": "City"
+        },
+        {
+            "Description": "The north to south coordinates of the sign-in location",
+            "Name": "Latitude"
+        },
+        {
+            "Description": "The east to west coordinates of the sign-in location",
+            "Name": "Longitude"
+        },
+        {
+            "Description": "Unique identifier of the request",
+            "Name": "RequestId"
+        },
+        {
+            "Description": "Unique identifier for the event",
+            "Name": "ReportId"
+        }
+    ],
+    "table": "AADSpnSignInEventsBeta"
+}

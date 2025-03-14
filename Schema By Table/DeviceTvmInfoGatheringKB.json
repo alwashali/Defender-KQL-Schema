@@ -1,0 +1,25 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the piece of information gathered",
+            "Name": "IgId"
+        },
+        {
+            "Description": "Name of the field where this information appears in the AdditionalFields column of the DeviceTvmInfoGathering table",
+            "Name": "FieldName"
+        },
+        {
+            "Description": "Description of the information gathered",
+            "Name": "Description"
+        },
+        {
+            "Description": "List of categories that the information belongs to, in JSON array format",
+            "Name": "Categories"
+        },
+        {
+            "Description": "The data structure of the information gathered",
+            "Name": "DataStructure"
+        }
+    ],
+    "table": "DeviceTvmInfoGatheringKB"
+}

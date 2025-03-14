@@ -1,0 +1,157 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Unique identifier for the event",
+            "Name": "ReportId"
+        },
+        {
+            "Description": "Unique identifier for the account in Microsoft Entra ID",
+            "Name": "AccountObjectId"
+        },
+        {
+            "Description": "User principal name (UPN) of the account",
+            "Name": "AccountUpn"
+        },
+        {
+            "Description": "On-premises security identifier (SID) of the account",
+            "Name": "OnPremSid"
+        },
+        {
+            "Description": "Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.",
+            "Name": "AccountDisplayName"
+        },
+        {
+            "Description": "User name of the account",
+            "Name": "AccountName"
+        },
+        {
+            "Description": "Domain of the account",
+            "Name": "AccountDomain"
+        },
+        {
+            "Description": "The criticality score of each account",
+            "Name": "CriticalityLevel"
+        },
+        {
+            "Description": "The certificate\u2019s type. It is one of the following: Machine, Server, Intermediate, Root, TrustedPublisher or Other",
+            "Name": "Type"
+        },
+        {
+            "Description": "On premises distinguished name of the account user",
+            "Name": "DistinguishedName"
+        },
+        {
+            "Description": "Cloud security identifier of the account",
+            "Name": "CloudSid"
+        },
+        {
+            "Description": "Given name or first name of the account user",
+            "Name": "GivenName"
+        },
+        {
+            "Description": "Surname, family name, or last name of the account user",
+            "Name": "Surname"
+        },
+        {
+            "Description": "Name of the department that the account user belongs to",
+            "Name": "Department"
+        },
+        {
+            "Description": "Job title of the account user",
+            "Name": "JobTitle"
+        },
+        {
+            "Description": "SMTP address of the account",
+            "Name": "EmailAddress"
+        },
+        {
+            "Description": "Voice of over IP (VOIP) session initiation protocol (SIP) address of the account",
+            "Name": "SipProxyAddress"
+        },
+        {
+            "Description": "Address of the account user",
+            "Name": "Address"
+        },
+        {
+            "Description": "City where the client IP address is geolocated",
+            "Name": "City"
+        },
+        {
+            "Description": "Country/Region where the account user is located",
+            "Name": "Country"
+        },
+        {
+            "Description": "Indicates whether the account is enabled or not",
+            "Name": "IsAccountEnabled"
+        },
+        {
+            "Description": "Manager of the account user",
+            "Name": "Manager"
+        },
+        {
+            "Description": "Phone number of the account user",
+            "Name": "Phone"
+        },
+        {
+            "Description": "Date and time when the account user was created",
+            "Name": "CreatedDateTime"
+        },
+        {
+            "Description": "The primary Identity provider of the account user",
+            "Name": "SourceProvider"
+        },
+        {
+            "Description": "The last source system to modify the account user",
+            "Name": "ChangeSource"
+        },
+        {
+            "Description": "A calculation based on the position of the user in the org tree and the user's Microsoft Entra roles and permissions. Possible values: Low, Medium, High",
+            "Name": "BlastRadius"
+        },
+        {
+            "Description": "The name for the company in which the user works",
+            "Name": "CompanyName"
+        },
+        {
+            "Description": "The date and time the user was deleted",
+            "Name": "DeletedDateTime"
+        },
+        {
+            "Description": "The employee identifier assigned to the user by the organization",
+            "Name": "EmployeeId"
+        },
+        {
+            "Description": "Additional email addresses of the user",
+            "Name": "OtherMailAddresses"
+        },
+        {
+            "Description": "The AAD risk level (Low/Medium/High) of the user account",
+            "Name": "RiskLevel"
+        },
+        {
+            "Description": "Details regarding the AAD risk level",
+            "Name": "RiskLevelDetails"
+        },
+        {
+            "Description": "State where the sign-in occurred, if available",
+            "Name": "State"
+        },
+        {
+            "Description": "Labels representing various attributes used to identify or categorize a security configuration",
+            "Name": "Tags"
+        },
+        {
+            "Description": "Active roles assigned to the account",
+            "Name": "AssignedRoles"
+        },
+        {
+            "Description": "A snapshot of privileged role assignment schedules and eligibility schedules for the account as maintained by Microsoft Entra Privileged Identity Management (excluding activated assignments)",
+            "Name": "PrivilegedEntraPimRoles"
+        }
+    ],
+    "table": "IdentityInfo"
+}

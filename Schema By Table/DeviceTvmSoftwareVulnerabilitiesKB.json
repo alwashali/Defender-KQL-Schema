@@ -1,0 +1,49 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system",
+            "Name": "CveId"
+        },
+        {
+            "Description": "Severity score assigned to the security vulnerability under the Common Vulnerability Scoring System (CVSS)",
+            "Name": "CvssScore"
+        },
+        {
+            "Description": "Cvss Vector is a compressed textual representation that reflects the values used to derive the score",
+            "Name": "CvssVector"
+        },
+        {
+            "Description": "Cve Supportability is an indicator to indicate whether Microsoft supports the Cve or supports it in a Premium plan",
+            "Name": "CveSupportability"
+        },
+        {
+            "Description": "Indicates whether exploit code for the vulnerability is publicly available",
+            "Name": "IsExploitAvailable"
+        },
+        {
+            "Description": "Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape",
+            "Name": "VulnerabilitySeverityLevel"
+        },
+        {
+            "Description": "Date and time the item or related metadata was last modified",
+            "Name": "LastModifiedTime"
+        },
+        {
+            "Description": "Date vulnerability was disclosed to the public",
+            "Name": "PublishedDate"
+        },
+        {
+            "Description": "Description of the vulnerability and associated risks",
+            "Name": "VulnerabilityDescription"
+        },
+        {
+            "Description": "List of all software products affected by the vulnerability",
+            "Name": "AffectedSoftware"
+        },
+        {
+            "Description": "Represents the probability that a vulnerability will be exploited. This probability is expressed as a number between 0 and 1 (0%-100%) according to the EPSS model.",
+            "Name": "EpssScore"
+        }
+    ],
+    "table": "DeviceTvmSoftwareVulnerabilitiesKB"
+}

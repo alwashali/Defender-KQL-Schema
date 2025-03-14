@@ -1,0 +1,69 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Fully qualified domain name (FQDN) of the device",
+            "Name": "DeviceName"
+        },
+        {
+            "Description": "Name of the network adapter",
+            "Name": "NetworkAdapterName"
+        },
+        {
+            "Description": "MAC address of the network adapter",
+            "Name": "MacAddress"
+        },
+        {
+            "Description": "Network adapter type",
+            "Name": "NetworkAdapterType"
+        },
+        {
+            "Description": "Operational status of the network adapter",
+            "Name": "NetworkAdapterStatus"
+        },
+        {
+            "Description": "Tunneling protocol, if the interface is used for this purpose, for example 6to4, Teredo, ISATAP, PPTP, SSTP, and SSH",
+            "Name": "TunnelType"
+        },
+        {
+            "Description": "Networks that the adapter is connected to. Each JSON element in the array contains the network name, category (public, private or domain), a description, and a flag indicating if it\u2019s connected publicly to the internet",
+            "Name": "ConnectedNetworks"
+        },
+        {
+            "Description": "DNS server addresses in JSON array format",
+            "Name": "DnsAddresses"
+        },
+        {
+            "Description": "IPv4 address of DHCP server",
+            "Name": "IPv4Dhcp"
+        },
+        {
+            "Description": "IPv6 address of DHCP server",
+            "Name": "IPv6Dhcp"
+        },
+        {
+            "Description": "Default gateway addresses in JSON array format",
+            "Name": "DefaultGateways"
+        },
+        {
+            "Description": "JSON array containing all the IP addresses assigned to the adapter, along with their respective subnet prefix and the IP class (RFC 1918 & RFC 4291)",
+            "Name": "IPAddresses"
+        },
+        {
+            "Description": "Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.",
+            "Name": "ReportId"
+        },
+        {
+            "Description": "Name of the manufacturer or vendor of the network adapter",
+            "Name": "NetworkAdapterVendor"
+        }
+    ],
+    "table": "DeviceNetworkInfo"
+}

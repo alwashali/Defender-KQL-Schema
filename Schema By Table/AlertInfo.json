@@ -1,0 +1,37 @@
+{
+    "columns": [
+        {
+            "Description": "Date and time when the record was generated",
+            "Name": "Timestamp"
+        },
+        {
+            "Description": "Unique identifier for the alert",
+            "Name": "AlertId"
+        },
+        {
+            "Description": "Title of the alert",
+            "Name": "Title"
+        },
+        {
+            "Description": "Type of threat indicator or breach activity identified by the alert",
+            "Name": "Category"
+        },
+        {
+            "Description": "Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert",
+            "Name": "Severity"
+        },
+        {
+            "Description": "Product or service that provided the alert information",
+            "Name": "ServiceSource"
+        },
+        {
+            "Description": "Detection technology or sensor that identified the notable component or activity",
+            "Name": "DetectionSource"
+        },
+        {
+            "Description": "MITRE ATT&CK techniques associated with the activity that triggered the alert",
+            "Name": "AttackTechniques"
+        }
+    ],
+    "table": "AlertInfo"
+}

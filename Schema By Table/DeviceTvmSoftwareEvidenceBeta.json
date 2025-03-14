@@ -1,0 +1,33 @@
+{
+    "columns": [
+        {
+            "Description": "Unique identifier for the device in the service",
+            "Name": "DeviceId"
+        },
+        {
+            "Description": "Name of the software vendor",
+            "Name": "SoftwareVendor"
+        },
+        {
+            "Description": "Name of the software product",
+            "Name": "SoftwareName"
+        },
+        {
+            "Description": "Version number of the software product",
+            "Name": "SoftwareVersion"
+        },
+        {
+            "Description": "Registry paths on which evidence indicating the existence of a software on a device was detected",
+            "Name": "RegistryPaths"
+        },
+        {
+            "Description": "Disk paths on which file level evidence indicating the existence of a software on a device was detected",
+            "Name": "DiskPaths"
+        },
+        {
+            "Description": "Date and time when the service last saw the device",
+            "Name": "LastSeenTime"
+        }
+    ],
+    "table": "DeviceTvmSoftwareEvidenceBeta"
+}
